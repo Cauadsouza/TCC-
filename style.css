@@ -143,7 +143,7 @@ a:hover {
 }
 
 #apresentacao {
-    background-color: #3B3309;
+    background-color: #293416;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -158,6 +158,9 @@ a:hover {
 
 #box_ap {
     width: 40vw;
+    height: 60vh;
+    background-color: #68722F;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
