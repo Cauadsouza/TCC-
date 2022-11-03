@@ -1,0 +1,251 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre Mundos</title>
+    <link rel="shortcut icon" href="assets/logo-fundo.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header id="capa_index">
+        <header id="capa_index">
+            <nav class="nav">
+                <img class="logo" src="assets/logo.png">
+                <ul class="menu">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="dados-nutricionais.html">Dados nutricionais</a></li>
+                    <li><a href="exercicios-fisicos.html">Exercicios Fisicas</a></li>
+                    <li><a href="contagem-calorica.html">Contagem de Calorias</a></li>
+                    <li><a href="planos-alimentares.html">Planos alimentares IF</a></li>
+                </ul>
+            </nav>
+        </header>
+    <main>
+        <section id="catalogo_sagas">
+            <div class="text_catalogo">
+            <h1 id="sagas_titulo">Grandes Jornadas</h1>
+            <p class="sagas_texto">Crescemos com algumas histórias. Elas marcam nossas vidas e quando chegam ao fim deixam aquela saudade nostalgica das aventuras que vivemos.</p>
+            <P class="sagas_texto">Se você está em busca de jornadas envolventes, cheias de emoção e dos mais variádos gêneros, temos algumas para te indicar!</P>
+            </div>
+            <div id="sagas_box">
+                <div id="saga1" class="cards_itens">
+                    <div class="cards_img" id="cards_img1" onclick="exibir()">
+                        <a href="#saga2"><img id="ex_livro" src="assets/thumb.jpg" height="467" width="600"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex">
+                            <video poster="assets/thumb.jpg" controls>
+                                <source src="assets/Annita.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </section>
+                </div>
+                <div id="saga2" class="cards_itens">
+                    <div class="cards_img" id="cards_img2" onclick="exibir2()">
+                        <a href="#saga3"><img id="ex_livro" src="assets/cemiterio.jpeg" height="467" width="300"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex2">
+                            <img src="assets/cemiterio.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">CEMITÉRIO DOS LIVROS ESQUECIDOS</h1>
+                            <h2 id="autor">Carlos Ruiz Zafón</h2>
+                            <p id="texto_sinopse">"Deixamos nossa vida e nossa alma na leitura, e esses bens estão cada vez mais escassos."
+                                <p id="texto_sinopse">Há um lugar onde os livros nunca são esquecidos. Suas almas estão preservadas além do tempo e escondidas nas ruas de Barcelona.
+                                Em uma das mais aclamadas obras do autor espanhol Carlos Ruiz Zafón, a tetralogia Cemitério dos Livros Esquecidos, promete um suspense cheio de fortes emoções e um emaranhado de histórias que se unem em um santuário literário através do tempo.</p>
+                            </div>
+                            <a href="#saga2"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="saga3" class="cards_itens">
+                    <div class="cards_img" id="cards_img3" onclick="exibir3()">
+                        <a href="#saga4"><img id="ex_livro" src="assets/acotar.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex3">
+                            <img src="assets/acotar.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">CORTE DE ESPINHOS E ROSAS</h1>
+                            <h2 id="autor">Sara J. Maas</h2>
+                            <p id="texto_sinopse"> Um mundo onde Féricos e Humanos são separados por uma muralhada e marcados por uma guerra à 300 anos. Feire é uma humana que caça para sustentar a família, até o dia que uma presa lhe custa sua vida. Agora ela é levada a Phithya, a terra dos Féricos, da magia. Obrigada a pagar a dívida da vida que tirou.</p>
+                                <p id="texto_sinopse">As cortes de Sara J. Maas irão te levar a um um universo repleto de fantasia  intrigas e romance.</p>
+                            </div>
+                            <a href="#saga3"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="saga4" class="cards_itens">
+                    <div class="cards_img" id="cards_img4" onclick="exibir4()">
+                        <a href="#saga5"><img id="ex_livro" src="assets/Percy_jackson.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex4">
+                            <img src="assets/Percy_jackson.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">PERCY JACKSON E OS OLIMPIANOS</h1>
+                            <h2 id="autor">Rick Riordan</h2>
+                            <p id="texto_sinopse">Percy é um garoto de 12 anos que após um acidente com sua professora de matemática se descobre um semideus filho de Poseidon. Mais que isso, aprende sobre a existência de vários jovens iguais a ele, agrupados em um acampamento escondido do resto do mundo.</p>                                                        
+                            <p id="texto_sinopse">Junto dos outros campistas, principalmente Grover e Annabeth, todo ano ele supera várias dificuldades em sua luta contra seus inimigos naturais, os monstros, resolvendo intrigas entre os deuses e descobrindo o mistério por trás dos titãs.</p>
+                            </div>
+                            <a href="#saga4"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="saga5" class="cards_itens">
+                    <div class="cards_img" id="cards_img5" onclick="exibir5()">
+                        <a href="#div_ex5"><img id="ex_livro" src="assets/herois_do_olimpo.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex5">
+                            <img src="assets/herois_do_olimpo.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">OS HERÓIS DO OLIMPO</h1>
+                            <h2 id="autor">Rick Riordan</h2>
+                            <p id="texto_sinopse">Se passando no mesmo universo de Percy Jackson e os olimpianos, a saga Heróis do Olimpo conta a história dos 7 heróis da profecia, que estavam destinados a derrubar os gigantes filhos de Gaia e Tártaros. Dentre eles, alguns são já conhecidos, como Percy, Annabeth, e alguns novos rostos, como Frank e o Jason.</p>
+                            <p id="texto_sinopse">Durante essa viagem, eles encontram com todo tipo de problema mandado por Gaia: deuses do vento, monstros do tártaro, gigantes e a até a própria Gaia.</p>
+                            </div>
+                            <a href="#saga5"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section id="catalogo_livros">
+            <div class="text_catalogo">
+            <h1 id="livros_titulo">Viagens Rápidas</h1>
+            <p class="livros_texto">Nem só de sagas vive um bom viajante literário. Sempre vale ter um bom livro em mãos. Seja uma leiutura boa e leve ou rápida e profunda, sempre haverá algo que irá tocar o coração do leitor.</p>
+            <p class="livros_texto">Escolha seu livro e embarque em uma nova viagem!</p>
+            </div>
+            <div id="livros_box">
+                <div id="livro1" class="cards_itens">
+                    <div class="cards_img" id="cards_img9" onclick="exibir9()" >
+                        <a href="#livro2"><img id="ex_livro" src="assets/por_lugares.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex9">
+                            <img src="assets/por_lugares.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">POR LUGARES INCRÍVEIS</h1>
+                            <h2 id="autor">Jennifer Niven</h2>
+                            <p id="texto_sinopse">Violet Markey e Theodore Finch são unidos na torre do colégio, onde nasce uma amizade única. Em meio a sesu traumas e sofrimentos, eles se juntam para fazer um trabalho de geografia e desbravar o estado onde vivem. Enquanto Violet para de contar os dias e Finch tenta se manter disperto. 
+                            </p>
+                            </div>
+                            <a href="#livro1"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="livro2" class="cards_itens">
+                    <div class="cards_img" id="cards_img10" onclick="exibir10()">
+                        <a href="#livro3"><img id="ex_livro" src="assets/outlander.jpeg" height="467" width="300"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex10">
+                            <img src="assets/outlander.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">A VIAJANTE DO TEMPO</h1>
+                            <h2 id="autor">Diana Gabaldon</h2>
+                            <p id="texto_sinopse">Escócia, 1945. Com o fim da 2° Guerra Mundial, a enfermeira Clare Randall desfruta de uma segunda lua de mel com o marido quando é atraída por um antigo circlo de pedras onde são realizados rituais antigos. Ao retornar ao lugar  ela é arrastada para 200 anos no passando, numa Escócia violenta dominada por clãs. Agora em meio a intrigas, perigos e anseios do coração ela travará uma batalha rumo ao presente.</p>
+                            </div>
+                            <a href="#livro2"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="livro3" class="cards_itens">
+                    <div class="cards_img" id="cards_img11" onclick="exibir11()">
+                        <a href="#livro4"><img id="ex_livro" src="assets/alice.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex11">
+                            <img src="assets/alice.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">ALICE NO PAÍS DAS MARAVILHAS</h1>
+                            <h2 id="autor">Lewis Carroll</h2>
+                            <p id="texto_sinopse">Através da toda do coelho possível chegar ao país das Maravilhas. 
+                                O clássico da literatura conta as aventuras da menina Alice no país das maravilhas a perseguir o coelho branco e achar o caminho de casa.</p>
+                            </div>
+                            <a href="#livro3"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="livro4" class="cards_itens">
+                    <div class="cards_img" id="cards_img12" onclick="exibir12()">
+                        <a href="#livro5"><img id="ex_livro" src="assets/petrus_logus.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex12">
+                            <img src="assets/petrus_logus.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">PETRUS LOGUS - O GUARDIÃO DO TEMPO</h1>
+                            <h2 id="autor">Augusto Cury</h2>
+                            <p id="texto_sinopse">Após uma grande guerra, a Terra ficou devastada, infértil e sem suas fontes de energia. A história, então, se passa 100 anos após essa catástrofe, no reino de cosmos, onde o acesso a informação é negado a todos. Assim, acompanhamos a vida do príncipe Petrus, um jovem fascinado pela leitura e tecnologias, mas que por isso é rejeitado por todos, incluindo sua própria família. A trama foca em Petrus desenvolvendo sua inteligência por meios clandestinos e sua luta para tirar o reino das mãos do seu pai tirano.</p>
+                            </div>
+                            <a href="#livro4"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="livro5" class="cards_itens">
+                    <div class="cards_img" id="cards_img13" onclick="exibir13()">
+                        <a href="#livro6"><img id="ex_livro" src="assets/it.jpeg" width="300" height="467"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex13">
+                            <img src="assets/it.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">IT - A COISA</h1>
+                            <h2 id="autor">Stephen King</h2>
+                            <p id="texto_sinopse">It - A coisa, a renomada obra de Stephen King, retrata a estranha cidade de Derry, local onde origina-se uma série de crimes perturbadores, e lar de um demônio ancestral. Os protagonistas do romance são um grupo de excluídos chamado "Clube dos Otários", que enfrentam "A coisa" quando crianças e voltam para sua cidade natal quando a criatura ameaça voltar à ativa.</p>
+                            <p id="texto_sinopse"> A obra trata de diversos assuntos sensíveis, como relacionamento abusivo, bullying, homofobia, racismo e diversos crimes mais severos.
+
+                                </p>
+                            </div>
+                            <a href="#livro5"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+                <div id="livro6" class="cards_itens">
+                    <div class="cards_img" id="cards_img14" onclick="exibir14()">
+                        <a href="#div_ex14"><img id="ex_livro" src="assets/rainha_vermelha.jpeg" height="467" width="300"></a>
+                    </div>
+                </div>
+                <div class="cards_itens">
+                    <section id="sec_ex">
+                        <div id="div_ex14">
+                            <img src="assets/rainha_vermelha.jpeg" height="390" width="250">
+                            <div id="letras">
+                            <h1 id="titulo_livro">A RAINHA VERMELHA</h1>
+                            <h2 id="autor">Victoria Aveyard</h2>
+                            <p id="texto_sinopse">Em uma nação em que o povo é dividido entre os de sangue vermelho e os de sangue prateado, Mare Barrow, uma jovem “vermelha", descobre poderes próprios que apenas os "prateados" deveriam ter. Ao longo da trama, a narrativa desenvolve a luta de Mare para conseguir direitos iguais entre os vermelhos e prateados, assim como a relação da garota com os dois nobres príncipes.</p>
+                            </div>
+                            <a href="#livro6"><img src="assets/marca_cruzada.png" height="30" width="30" id="marca_cruzada" onclick="fechar()"></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="script.js"></script>
+</body>
+</html>

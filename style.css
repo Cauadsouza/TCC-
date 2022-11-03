@@ -67,7 +67,7 @@ body {
 }
 
 nav {
-    background: linear-gradient(180deg, #B46746 27.47%, rgba(180, 103, 70, 0.67) 57.81%, rgba(180, 103, 70, 0.638559) 61.61%, rgba(180, 103, 70, 0) 100%);
+    background: linear-gradient(180deg, #1a5239 27.47%, #1a5239 57.81%, #1a5239 61.61%, rgba(180, 103, 70, 0) 100%);
     width: 100%;
     height: 20vh;
     display: flex;
@@ -263,7 +263,7 @@ a:hover {
     width: 100px;
 }
 
-#footer_index {
+#footer {
     background-color: #68722F;
     width: 100%;
     height: 10vh;
