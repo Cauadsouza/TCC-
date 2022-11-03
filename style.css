@@ -145,6 +145,42 @@ a:hover {
 #apresentacao {
     background-color: #293416;
     width: 100%;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#dados_nutricionais {
+    background-color: #3B3309;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#exercicios_fisicos {
+    background-color: #202D20;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contagem_calorias {
+    background-color: #3B3309;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#planos_alimentares {
+    background-color: #293416;
+    width: 100%;
     height: 95vh;
     display: flex;
     align-items: center;
@@ -156,15 +192,17 @@ a:hover {
     border-radius: 20px;
 }
 
+#ap_texto {
+    letter-spacing: 2px; 
+  
+}
+
 #box_ap {
-    width: 40vw;
-    height: 60vh;
-    background-color: #68722F;
-    border-radius: 20px;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 #box_ap a {
@@ -183,13 +221,6 @@ a:hover {
 
     height: 20px;
     width: 100px;
-}
-
-#catalogo_favoritos {
-    background-image: url(assets/kraft2.png);
-    background-size: cover;
-    width: 100%;
-    height: 95vh;
 }
 
 #leitura {
@@ -233,9 +264,9 @@ a:hover {
 }
 
 #footer_index {
-    background-color: #B6AC76;
+    background-color: #68722F;
     width: 100%;
-    height: 30vh;
+    height: 10vh;
 }
 
 
@@ -852,214 +883,3 @@ td,th,tr{
 
 /*Animation*/
 
-#frases {
-    background-image: url(assets/kraft1.png);
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#img_frases {
-    height: 40vh;
-    position: absolute;
-    right: 0;
-    top: 150vh;
-}
-
-#f1_l5{
-    color:#137474;
-    position: relative;
-    right: 10vw;
-}
-
-#f1_l1{
-    position: relative;
-    right: 10vw;
-}
-
-#f1_l2{
-    position: relative;
-    left: 5vw;
-}
-
-#f1_l4{
-    position: relative;
-    left: 13vw;
-}
-
-#f2_l1{
-    position: relative;
-}
-
-#f2_l2{
-    position: relative;
-    right: 14vw;
-}
-
-#f2_l3{
-    color: #3B3309;
-    position: relative;
-}
-
-#f2_l4{
-    position: relative;
-    right: 12vw;
-}
-
-#f2_l5{
-    position: relative;
-    left: 5vw;
-}
-
-#f3_l1{
-    position: relative;
-    color: #B46746;
-    right: 9vw;
-}
-
-#f3_l2{
-    position: relative;
-    left: 2vw;
-}
-
-#f3_l3{
-    position: relative;
-    right: 10vw;
-}
-
-#f3_l4{
-    position: relative;
-    color: #B46746;
-    left: 6vw;
-}
-
-#f4_l1{
-    position: relative;
-}
-
-#f4_l2{
-    position: relative;
-    left: 10vw;
-    color: #137474;
-}
-
-#f4_l3{
-    position: relative;
-    right: 10vw;
-}
-
-#f4_l4{
-    position: relative;
-    left: 8vw;
-}
-
-#f5_l1{
-    position: relative;
-}
-
-#f5_l2{
-    position: relative;
-    right: 14vw;
-}
-
-#f5_l3{
-    color: #3B3309;
-    position: relative;
-}
-
-#f5_l4{
-    position: relative;
-    left: 12vw;
-}
-
-#f5_l5{
-    position: relative;
-    right: 15vw;
-}
-#f5_l6{
-    position: relative;
-    left: 10vw;
-}
-
-.f_autor{
-    font-family: Ubuntu;
-    color: white;
-    position: relative;
-    top: 5vh;
-    text-align: center;
-    font-size: 15px;
-}
-
-#frase1{
-    opacity: 0;
-    animation-name: flutuar;
-    animation-duration: 30s;
-    position: absolute;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    color: #F5F3F5;
-}
-
-#frase2{
-    opacity: 0;
-    position: absolute;
-    animation-name: flutuar;
-    animation-duration: 30s;
-    animation-delay: 7s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    color: #F5F3F5;
-}
-
-#frase3{
-    opacity: 0;
-    position: absolute;
-    animation-name: flutuar;
-    animation-duration: 30s;
-    animation-delay: 13s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    color: #F5F3F5;
-}
-
-#frase4{
-    opacity: 0;
-    position: absolute;
-    animation-name: flutuar;
-    animation-duration: 30s;
-    animation-delay: 19s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    color: #F5F3F5;
-}
-
-#frase5{
-    opacity: 0;
-    position: absolute;
-    animation-name: flutuar;
-    animation-duration: 30s;
-    animation-delay: 24s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    color: #F5F3F5;
-}
-
-@keyframes flutuar{
-    0%{
-        opacity: 0.1;
-    }
-    5%{
-        opacity: 1;
-    }
-    10%{ 
-        opacity: 1;
-    }
-    22% {
-        opacity: 0;
-    }
-    100%{
-        opacity: 0;
-    }    
-}
