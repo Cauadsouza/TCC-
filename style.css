@@ -67,7 +67,7 @@ body {
 }
 
 nav {
-    background: linear-gradient(180deg, #1a5239 27.47%, #1a5239 57.81%, #1a5239 61.61%, rgba(180, 103, 70, 0) 100%);
+    background: linear-gradient(180deg, #4FC227 30%, #4ec227c7 50% , #4ec227a2 60%, rgba(180, 103, 70, 0) 90%);
     width: 100%;
     height: 20vh;
     display: flex;
@@ -143,16 +143,17 @@ a:hover {
 }
 
 #apresentacao {
-    background-color: #293416;
+    background-image: url(assets/ft2.jpg);
+    background-size: cover;
     width: 100%;
-    height: 65vh;
+    height: 95vh;
     display: flex;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
-    justify-content: space-around;
 }
-
 #dados_nutricionais {
-    background-color: #3B3309;
+    background-color: #3A8417;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -161,7 +162,7 @@ a:hover {
 }
 
 #exercicios_fisicos {
-    background-color: #202D20;
+    background-color: #4FC227;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -170,7 +171,7 @@ a:hover {
 }
 
 #contagem_calorias {
-    background-color: #3B3309;
+    background-color: #1EC6C6;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -179,7 +180,7 @@ a:hover {
 }
 
 #planos_alimentares {
-    background-color: #293416;
+    background-color: #8A4839;
     width: 100%;
     height: 95vh;
     display: flex;
@@ -193,7 +194,7 @@ a:hover {
 }
 
 #ap_texto {
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
   
 }
 
@@ -264,7 +265,7 @@ a:hover {
 }
 
 #footer {
-    background-color: #68722F;
+    background-color: #FFEBA6;
     width: 100%;
     height: 10vh;
 }
