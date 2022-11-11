@@ -171,7 +171,7 @@ a:hover {
 }
 
 #contagem_calorias {
-    background-color: #1EC6C6;
+    background-color: #000;
     width: 100%;
     height: 95vh;
     display: flex;
