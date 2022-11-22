@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { IndexComponent } from './index/index.component';
-import { PlanosAlimentaresComponent } from './planos-alimentares/planos-alimentares.component';
+import { HttpClientModule } from "@angular/common/http";
+import { DadosNutricionaisComponent } from './dados-nutricionais/dados-nutricionais.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent,
-    PlanosAlimentaresComponent
+    DadosNutricionaisComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
