@@ -16,4 +16,3 @@ export class DadosNutricionais{
     Ferro:number = 0;
     Magnésio:number = 0
 }
-   

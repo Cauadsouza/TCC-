@@ -9,10 +9,11 @@ export class AlimentosService {
   private URL:string
 
   constructor(private http:HttpClient) { 
-    this.URL = 'http://localhost:300/';
+    this.URL = 'http://localhost:3000/';
   }
 
-  obterDados(): Observable<any> {
-    return this.http.get(`${this.URL}Alimentos`);
+  obterDados(nome: string | any): Observable<any> {
+    return this.http.get(`${this.URL}alimentos`);
+    return this.http.get(`${this.URL}alimentos/nome/${nome}`)
   }
 }

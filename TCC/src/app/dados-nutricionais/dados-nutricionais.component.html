@@ -1,1 +1,36 @@
-<p>dados-nutricionais works!</p>
+<h2>Alimentos</h2>
+<form>
+  <div class="form-group">
+    <label for="pesquisa"><b>Pesquisar por </b></label>
+    <select class="form-control" id="tipo" [formControl]="tipo">
+      <option value="nome">nome</option>
+      <option value="siglaUf">UF</option>
+      <option value="siglaPartido">partido</option>
+      <option value="siglaSexo">sexo</option>
+    </select>
+    <br>
+    <input
+      class="form-control"
+      id="pesquisa"
+      type="text" 
+      placeholder="Escreva aqui..."
+      [formControl]="pesquisa">
+  </div>
+  <br>
+  <div>
+    <input
+    class="btn btn-primary"
+    type="button"
+    value="Pesquisar"
+    (click)="pesquisar()">
+  </div>
+</form>
+<br>
+<div class="resultados">
+    <div class="deputado" *ngFor="let dep of deputados">
+      <img [src]="dep.urlFoto" alt="" />
+        <b>{{ dep.nome }}</b><br>
+        {{ dep.siglaPartido }} - {{ dep.siglaUf }}
+    </div>
+</div>
+
