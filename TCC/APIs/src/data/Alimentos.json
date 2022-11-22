@@ -1,0 +1,38 @@
+[
+    {
+        "id":  101,
+        "Nome": "",
+        "Peso": 0,
+        "Calorias": 0,
+        "Gordura": 0,
+        "Colesterol": 0,
+        "Sal": 0,
+        "Sódio": 0,
+        "Potássio": 0,
+        "Carboidratos": 0,
+        "Proteína": 0,
+        "Vitamina A": 0,
+        "Vitamina C": 0,
+        "Cálcio": 0,
+        "Ferro": 0,
+        "Magnésio": 0
+    },
+    {
+        "id": 1,
+        "Nome": "Cenoura",
+        "Peso": 100,
+        "Calorinodemoas": 35,
+        "Gordura": 0.2,
+        "Colesterol": 0,
+        "Sal": 0,
+        "Sódio": 58,
+        "Potássio": 235,
+        "Carboidratos": 8.2,
+        "Proteína": 0.8,
+        "Vitamina A": 5.15,
+        "Vitamina C": 3.6,
+        "Cálcio": 30,
+        "Ferro": 0.36,
+        "Magnésio": 0
+    }
+]
