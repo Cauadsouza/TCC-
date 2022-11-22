@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/plnpm atform-browser';
 import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
