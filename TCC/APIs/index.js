@@ -42,4 +42,3 @@ server.get('/alimentosIF/nome/:nm', (req, res) => {
     let nm = AlimentosIF.filter(n => n.Nome == nome);
     res.json(nm);    
 })
-
