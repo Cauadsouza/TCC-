@@ -16,9 +16,9 @@ server.get('/Alimentos/:id', (req, res) => {
     res.json(prod);    
 })
 
-server.get('/Alimentos/:id/Nome', (req, res) => {
-    let Nome = req.params.Nome;
-    let nm = Alimentos.filter(n => n.Nome == Nome);
+server.get('/alimentos/nome/:nm', (req, res) => {
+    let nome = req.params.nome;
+    let nm = Alimentos.filter(n => n.Nome == nome);
     res.json(nm);    
 })
 
