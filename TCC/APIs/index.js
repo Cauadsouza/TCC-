@@ -3,7 +3,7 @@ const server = express ();
 const Alimentos = require('./src/data/Alimentos.json')
 const AlimentosIF = require('./src/data/AlimnetosIF.json')
 
-server.listen(3000, () => {
+server.listen(300, () => {
     console.log("Funcionando...")
 });
 
