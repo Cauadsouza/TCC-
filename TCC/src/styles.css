@@ -1,1 +1,888 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(assets/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(assets/Ubuntu-Regular.ttf);
+}
+
+h1 {
+    color: #f3f5f3;
+    font-family: Oswald;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    font-family: Oswald;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 55px;
+    line-height: 55px;
+    align-items: center;
+    text-align: center;  
+}
+
+h3 {
+    color: #f3f5f3;
+    font-family: Oswald;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    color: #f3f5f3;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: justify;
+    text-indent: 20px; 
+}
+
+
+
+
+
+/*MENU*/
+body {
+    background-color: #3B3309;
+}
+
+nav {
+    background: linear-gradient(180deg, #4FC227 30%, #4ec227c7 50% , #4ec227a2 60%, rgba(180, 103, 70, 0) 90%);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+ul {
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.menu a {
+    color: #f3f5f3;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: justify;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.logo {
+    height: 14vh;
+}
+
+.logo-if{
+    height: 12vh;
+}
+
+@media (max-width:600px){
+    .nav{
+        height: 30vh;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .logo{
+        height: 10vh;
+        margin-top: 2vh;
+    }
+
+    .menu {
+        width: 100%;
+        justify-self: start;
+        margin-top: 2vh;
+    }
+}
+
+
+
+/*INDEX*/
+#capa_index {
+    background-image: url(assets/capa-index.png);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    background-position: center; 
+}
+
+#apresentacao {
+    background-image: url(assets/ft2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#dados_nutricionais {
+    background-color: #3A8417;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#exercicios_fisicos {
+    background-color: #4FC227;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#contagem_calorias {
+    background-color: #1EC6C6;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#planos_alimentares {
+    background-color: #8A4839;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ap_img {
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#ap_texto {
+    letter-spacing: 2px;
+  
+}
+
+#box_ap {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#box_ap a {
+    color: #f3f5f3;
+    background-color: #B46746;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 100px;
+}
+
+#leitura {
+    background-color: #B46746;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#leitura_img {
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#box_leitura {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#box_leitura a {
+    color: #f3f5f3;
+    background-color: #137474;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 100px;
+}
+
+#footer {
+    background-color: #FFEBA6;
+    width: 100%;
+    height: 10vh;
+}
+
+
+
+
+/*TECNICAS*/
+#capa_tecnicas {
+    background-image: url(assets/capa-tecnicas.png);
+    background-size: cover;
+    width: 100%;
+    height: 95vh; 
+    background-position: center; 
+}
+
+#tecleitura {
+    background-image: url(assets/kraft1.png);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+
+
+
+#box_tec {
+    width: 60vw;
+    height: 25vh;
+}
+
+#box-tec h1{
+    color: #137474;
+}
+
+#box_teclinks {
+    display: flex;
+    justify-content: center;
+    width: 60vw;
+    height: 30vh;
+}
+
+#tecnica1 {
+    background-color: #137474;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#tec1_img {
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#box_tec1 {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#box_tec1 ul li {
+    color: #f3f5f3;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 20px;
+    align-items: center;
+    text-align: justify;
+}
+
+#box_tec1 a {
+    color: #f3f5f3;
+    background-color: #B46746;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 150px;
+}
+
+#tecnica2 {
+    background-color: #3B3309;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tec2_img {
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#box_tec2 {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#box_tec2 a {
+    color: #f3f5f3;
+    background-color: #137474;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 150px;
+}
+
+#tecnica3 {
+    background-color: #B46746;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tec3_img {
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#box_tec3 {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#box_tec3 a {
+    color: #f3f5f3;
+    background-color: #3B3309;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 150px;
+}
+
+#footer_tecnicas {
+    background-color: #B6AC76;
+    width: 100%;
+    height: 30vh;
+}
+
+
+
+
+
+/*MUNDOS*/
+#capa_mundos {
+    background-image: url(assets/capa-resenhas.png);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    background-position: center;     
+}
+
+.text_catalogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#catalogo_favoritos,#catalogo_sagas,#catalogo_livros {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#catalogo_sagas {
+    background-color: #137474;
+}
+
+#catalogo_livros {
+    background-color: #B46746;
+}
+
+.text_catalogo p, .text_catalogo p {
+    width: 60vw;
+}
+
+.text_catalogo h1, .text_catalogo h1 {
+    width: 60vw;
+    margin-bottom: 2vh;
+}
+
+#livros_box,#sagas_box {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+}
+.cards_itens{
+    display: inline-block;
+    transition: all.2 ease-in-out;
+    padding: 1%;
+}
+.cards_itens img{
+    cursor: pointer;
+}
+
+#ex_livro:hover{
+    opacity: 0;
+  }
+
+#cards_img1:hover{
+    background-image: url(assets/narnia_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img2:hover{
+    background-image: url(assets/cemiterio_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img3:hover{
+    background-image: url(assets/acotar_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img4:hover{
+    background-image: url(assets/percy_jackson_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img5:hover{
+    background-image: url(assets/herois_do_olimpo_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img9:hover{
+    background-image: url(assets/por_lugares_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img10:hover{
+    background-image: url(assets/outlander_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img11:hover{
+    background-image: url(assets/alice_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img12:hover{
+    background-image: url(assets/petrus_logus_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img13:hover{
+    background-image: url(assets/it_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+#cards_img14:hover{
+    background-image: url(assets/rainha_vermelha_2.png);
+    background-repeat: no-repeat;
+    background-size: 300px 467px;
+}
+
+.cards_img{
+    border-radius: 10.84px;
+    height: 465px;
+}
+
+#ex_livro{
+    border-radius: 10.84px;
+}
+
+#footer_mundos {
+    background-color: #B6AC76;
+    width: 100%;
+    height: 30vh;
+}
+
+#div_ex,#div_ex2,#div_ex3,#div_ex4,#div_ex5,#div_ex6,#div_ex7,#div_ex8,#div_ex9,#div_ex10,#div_ex11,#div_ex12,#div_ex13,#div_ex14,#div_ex15,#div_ex16{
+    background-color: white;
+    height: 70vh;
+    width: 70vw;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+#sec_ex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#letras{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    width: 40vw;
+}
+
+#titulo_livro{
+    font-family: Oswald;
+    color: #3B0918;
+    white-space: normal;
+    font-size: 35px;
+}
+
+#autor{
+    font-size: 20px;
+    font-family: Ubuntu;
+    white-space: normal;
+}
+
+#texto_sinopse{
+    font-size: 14px;
+    color: black;
+    white-space: normal;
+}
+
+#marca_cruzada{
+    position:relative;
+    top: -28vh;
+}
+
+.ap_liv{
+    position: relative;
+    top: 20vh;
+    opacity: none;    
+}
+
+body::-webkit-scrollbar {
+    width: 20px;              
+  }
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f3f5f3;    
+    border-radius: 20px;       
+  }
+::-webkit-scrollbar-thumb{
+    background-color: #3B3309;    
+    border-radius: 20px;  
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+
+
+/*QUEM SOMOS*/
+#bookstans {
+    background-color: #3B3309;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bookstans h1, #bookstans p {
+    width: 60vw;
+}
+
+    
+#bookstans_box{
+    width: 60vw;
+}
+
+#membros {
+    background-color: #137474;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#membro1_img, #membro2_img {
+    height: 40vh;
+    border-radius: 120px;
+}
+
+#membro1_img{
+    background-image: url(assets/julia.jpeg);
+}
+
+#membro1, #membro2 {
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+
+
+
+/*REFERENCIAS*/
+#capa_referencias {
+    background-image: url(assets/capa-referencias.png);
+    background-size: cover;
+    width: 100%;
+    height: 95vh;   
+    background-position: center;
+}
+
+#body_referencias{
+    background-color: #3B3309;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tabela_ref{
+    background-image: url(assets/kraft1.png);
+    height: 150vh;
+    width: 60vw;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+table{
+    text-align: center;
+    width: 40vw;
+}
+
+#table_1{
+    position: relative;
+    bottom: 20vh;
+}
+
+#table_2{
+    position: relative;
+}
+
+td,th,tr{
+    border: 3px solid #3B0918;
+    width: 30%;
+    font-family: Ubuntu;
+}
+
+#topico{
+    background-color: #137474;
+}
+
+#fonte{
+    background-color: #B46746;
+}
+
+#th2{
+    background-color:#B6AC76;
+}
+
+/*RESPONSIVIDADE telas pquenas*/
+@media (max-width:830px)  {
+    h1 {
+        color: #f3f5f3;
+        font-family: Oswald;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 35px;
+        line-height: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    h2 {
+        font-family: Oswald;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 55px;
+        line-height: 55px;
+        align-items: center;
+        text-align: center;  
+    }
+    
+    h3 {
+        color: #f3f5f3;
+        font-family: Oswald;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 50px;
+        line-height: 50px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    p {
+        color: #f3f5f3;
+        font-family: Ubuntu;
+        font-weight: 500;
+        font-style: bolder;
+        font-size: 14px;
+        line-height: 20px;
+        align-items: center;
+        text-align: justify;
+        text-indent: 20px; 
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+    
+    #capa_index, #capa_tecleitura, #capa_mundos, #capa_quemsomos, #capa_referencias{
+        height: 70vh;
+        background-position: center;
+    }
+
+    #apresentacao, #leitura, #tecnica1, #tecnica2, #tecnica3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #box_ap, #box_leitura,#box_tec1, #box_tec2, #box_tec3 {
+        width: 80vw;
+    }
+
+    #ap_img, #leitura_img, #tec1_img, #tec2_img, #tec3_img {
+        height: 30vh;
+    }
+
+    #img_frases {
+        top: 125vh;
+    }
+    
+    #box_teclinks {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #box_teclinks a{
+        height: 6vh;
+    }
+
+    #box_teclinks a img {
+        height: 30vh;
+    }
+
+    #membros{
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #membro1, #membro2 {
+        width: 40vh;
+    }
+
+    #membro1_img,#membro2_img{
+        height: 25vh;
+    }
+}
+
+
+
+
+
+/*Animation*/
+

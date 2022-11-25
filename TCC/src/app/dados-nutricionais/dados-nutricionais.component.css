@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+#lista-inicial li{
+    font-size: 20px;
+    border-bottom: solid black;
+    border-width: 1px;
+}
+
+a {
+    color: whitesmoke;
+    line-height: 5;
+}
+
+a:hover {
+    opacity: 0.7;
+    cursor: pointer;
+    color: red;
+}
+
+#Dados-Alimentos {
+    background-color: rgb(87, 116, 68);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+#lista-alimentos{
+    background-color: rgb(87, 116, 68);
+    background-size: cover;
+    width: 68%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.5;
+    margin: 5em;
+}
+
+#div-alimentos{
+
+}
+
+#cda{
+    font-size: 44px;
+}
+
+#div-infos{
+    background-color: #137474;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
