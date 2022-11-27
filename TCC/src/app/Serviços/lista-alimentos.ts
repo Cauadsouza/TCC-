@@ -1,11 +1,10 @@
 export interface LA {
     id:number;
     Nome:string;
-    Peso:number;
     Calorias:number;
     Gordura:number;
-    Sódio:number;
+    Sodio:number;
     Carboidratos:number;
-    Proteína:number;
+    Proteina:number;
     Fibra:number
 }

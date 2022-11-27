@@ -11,7 +11,7 @@ import { NgForm } from '@angular/forms';
 export class DadosNutricionaisComponent implements OnInit{
   
   alimento = {} as LA;
-  alimentos: LA[];
+  alimentos: LA[] = [];
   
   constructor(private alimentosService:AlimentosService) {}
   

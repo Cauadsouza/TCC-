@@ -1,29 +1,41 @@
-<link rel="stylesheet" type="text/css" href="dados-nutricionais.component.css">
-<section id = Dados-Alimentos>
-  <section id = lista-alimentos>
-  <ul>
-    <li><a href="index.html">Início</a></li>
-  </ul>
-  <h2 id="cda">Categorias de Alimentos</h2>
-  <div id = div-alimentos>
-    <ul id="lista-inicial">
-      <li>Bebidas</li>
-      <li>Carnes</li>
-      <li>Doces</li>
-      <li>Bebidas</li>
-      <li>Carnes</li>
-      <li>Doces</li>
-      <li>Frios e Embutidos</li>
-      <li>Frutas</li>
-      <li>Legumes,Verduras e Grãos</li>
-      <li>Manteiga e Òleos</li>
-      <li>Massas</li>
-      <li>Molhos,Caldos e Condimentos</li>
-      <li>Ovos,Leite e Queijo</li>
-      <li>Pães</li>
-    </ul>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Gerenciamento de alimentos</li>
+  </ol>
+</nav>
+<div class="container">
+  <div class="card list-car">
+    <h5 class="card-header">Lista de alimentos</h5>
+    <div class="card-body">
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Calorias</th>
+              <th scope="col">Gordura</th>
+              <th scope="col">Sodio</th>
+              <th scope="col">Carboidratos</th>
+              <th scope="col">Proteina</th>
+              <th scope="col">Fibra</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let alimento of alimentos">
+              <td>{{alimento.id}}</td>
+              <td>{{alimento.Nome}}</td>
+              <td>{{alimento.Calorias}}</td>
+              <td>{{alimento.Gordura}}</td>
+              <td>{{alimento.Sodio}}</td>
+              <td>{{alimento.Carboidratos}}</td>
+              <td>{{alimento.Proteina}}</td>
+              <td>{{alimento.Fibra}}</td>
+              <td>
+                <button type="button" class="btn btn-warning btn-sm" (click)="editAlimento(alimento)">Editar</button>
+                <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deleteAlimento(alimento)">Deletar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
   </div>
-  </section>
-  <div id = div-infos>
-  </div>
-</section>

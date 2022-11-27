@@ -4,9 +4,9 @@
         "Nome": "",
         "Calorias": 0,
         "Gordura": 0,
-        "Sódio": 0,
+        "Sodio": 0,
         "Carboidratos": 0,
-        "Proteína": 0,
+        "Proteina": 0,
         "Fibra": 0
     },
     {
@@ -14,9 +14,9 @@
         "Nome": "Coca-Cola",
         "Calorias": 435,
         "Gordura": 0.2,
-        "Sódio": 58,
+        "Sodio": 58,
         "Carboidratos": 8.2,
-        "Proteína": 0.8,
+        "Proteina": 0.8,
         "Fibra": 0
     },
     {
@@ -24,9 +24,9 @@
         "Nome": "Suco de Acerola",
         "Calorias": 33,
         "Gordura": 0.2,
-        "Sódio": 58,
+        "Sodio": 58,
         "Carboidratos": 8.2,
-        "Proteína": 80,
+        "Proteina": 80,
         "Fibra": 0
     }
 ]
