@@ -57,19 +57,25 @@ p {
     text-indent: 20px; 
 }
 
+#footer {
+    background-color: #392a35;
+    width: 100%;
+    height: 10vh;
+}
+
 
 
 
 
 /*MENU*/
 body {
-    background-color: #3B3309;
+    background-color: #29ffc9;
 }
 
 nav {
-    background: linear-gradient(180deg, #4FC227 30%, #4ec227c7 50% , #4ec227a2 60%, rgba(180, 103, 70, 0) 90%);
+    background: linear-gradient(180deg, #392a35 30%, #392a35 50% , #392a35 60%, #392a35 100%);
     width: 100%;
-    height: 20vh;
+    height: 13vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -77,7 +83,7 @@ nav {
     list-style: none;
 }
 
-ul {
+.menu {
     width: 80vw;
     display: flex;
     flex-direction: row;
@@ -134,13 +140,6 @@ a:hover {
 
 
 /*INDEX*/
-#capa_index {
-    background-image: url(assets/capa-index.png);
-    background-size: cover;
-    width: 100%;
-    height: 95vh;
-    background-position: center; 
-}
 
 #apresentacao {
     background-image: url(assets/ft2.jpg);
@@ -264,16 +263,12 @@ a:hover {
     width: 100px;
 }
 
-#footer {
-    background-color: #FFEBA6;
-    width: 100%;
-    height: 10vh;
-}
 
 
 
 
-/*TECNICAS*/
+
+/*DADOS NUTRICIONAIS*/
 #capa_tecnicas {
     background-image: url(assets/capa-tecnicas.png);
     background-size: cover;
@@ -450,7 +445,7 @@ a:hover {
 
 
 
-/*MUNDOS*/
+/*EXERCICIOS-FISICOS*/
 #capa_mundos {
     background-image: url(assets/capa-resenhas.png);
     background-size: cover;
@@ -667,58 +662,55 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/*QUEM SOMOS*/
-#bookstans {
-    background-color: #3B3309;
+/*CONTAGEM DE CALORIAS*/
+
+#div-alimentos ul{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin-left: 3vw;
+    list-style: none;
+}
+
+#lista-inicial li{
+    font-size: 18px;
+}
+
+
+#Dados-Alimentos {
     background-size: cover;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#lista-alimentos{
+    background-size: cover;
+    width: 20%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    line-height: 2;
 }
 
-#bookstans h1, #bookstans p {
-    width: 60vw;
+#cda{
+    margin-top: 4vh;
+    font-size: 24px;
 }
 
-    
-#bookstans_box{
-    width: 60vw;
-}
-
-#membros {
-    background-color: #137474;
+/*#div-infos{
+    background-color: ;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-}
-
-#membro1_img, #membro2_img {
-    height: 40vh;
-    border-radius: 120px;
-}
-
-#membro1_img{
-    background-image: url(assets/julia.jpeg);
-}
-
-#membro1, #membro2 {
-    width: 40vw;
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: start;
-}
+}*/
 
 
 
-
-/*REFERENCIAS*/
+/*PLANOS ALIMENTARES IF*/
 #capa_referencias {
     background-image: url(assets/capa-referencias.png);
     background-size: cover;
