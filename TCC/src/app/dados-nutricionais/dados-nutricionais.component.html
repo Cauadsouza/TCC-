@@ -21,15 +21,15 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let alimento of alimentos">
-              <td>{{alimento.id}}</td>
-              <td>{{alimento.Nome}}</td>
-              <td>{{alimento.Calorias}}</td>
-              <td>{{alimento.Gordura}}</td>
-              <td>{{alimento.Sodio}}</td>
-              <td>{{alimento.Carboidratos}}</td>
-              <td>{{alimento.Proteina}}</td>
-              <td>{{alimento.Fibra}}</td>
+            <tr *ngFor="let alim of alimentos">
+              <td>{{alim.id}}</td>
+              <td>{{alim.Nome}}</td>
+              <td>{{alim.Calorias}}</td>
+              <td>{{alim.Gordura}}</td>
+              <td>{{alim.Sodio}}</td>
+              <td>{{alim.Carboidratos}}</td>
+              <td>{{alim.Proteina}}</td>
+              <td>{{alim.Fibra}}</td>
               <td>
                 <button type="button" class="btn btn-warning btn-sm" (click)="editAlimento(alimento)">Editar</button>
                 <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deleteAlimento(alimento)">Deletar</button>
