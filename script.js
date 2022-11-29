@@ -78,3 +78,11 @@ function fechar(){
     unicadiv13.style.display = "none"
     unicadiv14.style.display = "none"
 }
+
+
+let idade = window.document.getElementById("idade")
+function Calcular(){
+    if(idade < 0){
+
+    }
+}

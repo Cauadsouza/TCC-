@@ -25,13 +25,40 @@
         </header>
         <main>
             <div class="container">
-                <h3 class="widget-preview-title">Preview da Calculadora</h3>
-                <section id="widget-preview-area">
-                <div class="yz-widget" data-calculator-type="bmi" data-language="pt" data-background-color="#EEEEEE" data-text-color="#212121" data-primary-color="#03A9F4" data-unit-system="metric" data-alternate-background-color="#FFFFFF" data-alternate-text-color="#FFFFFF" data-secondary-color="#FFC107"><span class="yz-copyright">Powered by <a href="https://www.yazio.com/pt/calculadora-imc">YAZIO</a></span></div>
+                <h2>Calcular Calorias Diárias</h2>
+                <section id="contagem-calorica">
+                    <div>
+                        <h2>Qual o seu sexo?</h2>
+                        <input type="button" value="Homem"/>
+                        <input type="button" value="Mulher"/>
+                    </div>
+                    <div>
+                        <h2>Qual a sua idade?</h2>
+                        <input type="number" id="idade" value="idade">
+                        <label for="idade">anos</label>
+                    </div>
+                    <div>
+                        <h2>Qual a sua altura?</h2>
+                        <input type="number" id="altura" value="altura">
+                        <label for="altura">cm</label>
+                    </div>
+                    <div>
+                        <h2>Qual o seu peso?</h2>
+                        <input type="number" id="peso" value="peso">
+                        <label for="peso">kg</label>
+                    </div>
+                    <div>
+                        <h2>Qual é o seu nível de atividade diária?</h2>
+                        <input type="button" value="Atividade leve"/>
+                        <input type="button" value="Atividade Moderada"/>
+                        <input type="button" value="Atividade intensa"/>
+                    </div>
+                    <button type="button" class="Calcular" (click)="Calcular()">Calcule calorias diárias necessárias</button>
                 </section>
             </div>
         </main>
         <footer id="footer"></footer>
         <script src="script.js"></script>
+        <script src="script.ts"></script>
     </body>
 </html>

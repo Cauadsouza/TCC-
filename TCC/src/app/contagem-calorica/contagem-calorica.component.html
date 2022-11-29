@@ -1,0 +1,50 @@
+<body>
+    <header id="capa_index">
+        <nav class="nav">
+            <img class="logo" src="../../../../assets/INFONUTRI.png">
+            <ul class="menu">
+                <li><a href="../index/index.component.html">Início</a></li>
+                <li><a href="../dados-nutricionais/dados-nutricionais.component.html">Dados nutricionais</a></li>
+                <li><a href="../exercicios-fisicos/exercicios-fisicos.component.html">Exercicios Fisicas</a></li>
+                <li><a href="../info-nutricionais/info-nutricionais.component.html">Informações nutricionais</a></li>
+                <li><a href="contagem-calorica.component.html">Contagem de Calorias</a></li>
+                <li><a href="../planos-alimentares/planos-alimentares.component.html">Planos alimentares IF</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Calcular Calorias Diárias</h2>
+            <section id="contagem-calorica">
+                <div>
+                    <h2>Qual o seu sexo?</h2>
+                    <input type="button" value="Homem"/>
+                    <input type="button" value="Mulher"/>
+                </div>
+                <div>
+                    <h2>Qual a sua idade?</h2>
+                    <input type="number" id="idade" value="idade">
+                    <label for="idade">anos</label>
+                </div>
+                <div>
+                    <h2>Qual a sua altura?</h2>
+                    <input type="number" id="altura" value="altura">
+                    <label for="altura">cm</label>
+                </div>
+                <div>
+                    <h2>Qual o seu peso?</h2>
+                    <input type="number" id="peso" value="peso">
+                    <label for="peso">kg</label>
+                </div>
+                <div>
+                    <h2>Qual é o seu nível de atividade diária?</h2>
+                    <input type="button" value="Atividade leve"/>
+                    <input type="button" value="Atividade Moderada"/>
+                    <input type="button" value="Atividade intensa"/>
+                </div>
+                <button type="button" class="Calcular" (click)="Calcular()">Calcule calorias diárias necessárias</button>
+            </section>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+</body>
