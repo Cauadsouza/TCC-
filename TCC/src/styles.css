@@ -14,14 +14,12 @@
 }
 
 h1 {
-    color: #f3f5f3;
     font-family: Oswald;
     font-weight: bold;
     font-style: normal;
     font-size: 50px;
     line-height: 50px;
-    align-items: center;
-    text-align: center;
+    margin-bottom: 0.5em;
 }
 
 h2 {
@@ -46,7 +44,6 @@ h3 {
 }
 
 p {
-    color: #f3f5f3;
     font-family: Ubuntu;
     font-weight: 500;
     font-style: normal;
@@ -71,12 +68,13 @@ body {
 nav {
     background: linear-gradient(180deg, #031634 30%, #031634 50% , #031634 60%, #031634 100%);
     width: 100%;
-    height: 13vh;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    position: fixed;
 }
 
 .menu {
@@ -107,7 +105,7 @@ a:hover {
 }
 
 .logo {
-    height: 14vh;
+    height: 12vh;
 }
 
 .logo-if{

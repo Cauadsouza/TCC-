@@ -1,0 +1,126 @@
+
+main{
+    background-color: #137474;
+}
+
+nav{
+    position: fixed;
+}
+
+#apresentacao {
+    background-color: #033649;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#dados_nutricionais {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#exercicios_fisicos {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contagem_calorias {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#planos_alimentares {
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ap_img {
+    height: 60vh;
+    border-radius: 50%;
+}
+
+#ap_texto {
+    font-family: "Catamaran"
+}
+
+#box_ap {
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10em;
+}
+
+#box_ap a {
+    color: #f3f5f3;
+    background-color: #B46746;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 100px;
+}
+
+#leitura {
+    background-color: #B46746;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#leitura_img {
+    height: 70vh;
+    border-radius: 20px;
+}
+
+#box_leitura {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+#box_leitura a {
+    color: #f3f5f3;
+    background-color: #137474;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    height: 20px;
+    width: 100px;
+}
