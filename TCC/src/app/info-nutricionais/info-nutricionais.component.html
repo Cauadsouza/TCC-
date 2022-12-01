@@ -1,0 +1,172 @@
+<header id="capa_index">
+    <nav class="nav">
+        <img class="logo" src="../../../../assets/INFONUTRI.png">
+        <ul class="menu">
+            <li><a href="../../../../index.html">Início</a></li>
+            <li><a href="dados-nutricionais.html">Dados nutricionais</a></li>
+            <li><a href="exercicios-fisicos.html">Exercicios Fisicas</a></li>
+            <li><a href="info-nutricionais.html">Informações nutricionais</a></li>
+            <li><a href="contagem-calorica.html">Contagem de Calorias</a></li>
+            <li><a href="planos-alimentares.html">Planos alimentares IF</a></li>
+        </ul>
+    </nav>
+</header>
+    <div id = Dados-Alimentos>
+        <div id = lista-alimentos>
+        <h2 id="cda">Categorias de Alimentos</h2>
+        <div id = div-alimentos>
+        <ul id="lista-inicial">
+            <div class="LAs" (click)="ExibirB()">
+                <li>Bebidas</li>
+            </div>
+            <div class="LAs" (click)="ExibirC()">
+                <li>Carnes</li>
+            </div>
+            <div class="LAs" (click)="ExibirD()">
+                <li>Doces</li>
+            </div>
+            <div class="LAs" (click)="ExibirF()">
+                <li>Frutas</li>
+            </div>
+            <div class="LAs" (click)="ExibirV()">
+                <li>Legumes,Verduras e Grãos</li>
+            </div>
+        </ul>
+        </div>
+    </div>
+        <div id = div-infos>
+            <div class="card list-car">
+      <div class="card-body" id='card-b'[ngStyle]="{'display': displayB}">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Calorias</th>
+                <th scope="col">Gordura</th>
+                <th scope="col">Sodio</th>
+                <th scope="col">Carboidratos</th>
+                <th scope="col">Proteina</th>
+                <th scope="col">Fibra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let alim of bebidas">
+                <td class="ali">{{alim.Nome}}</td>
+                <td>{{alim.Calorias}}</td>
+                <td>{{alim.Gordura}}</td>
+                <td>{{alim.Sodio}}</td>
+                <td>{{alim.Carboidratos}}</td>
+                <td>{{alim.Proteina}}</td>
+                <td>{{alim.Fibra}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-body" id='card-c' [ngStyle]="{'display': displayC}">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Calorias</th>
+                <th scope="col">Gordura</th>
+                <th scope="col">Sodio</th>
+                <th scope="col">Carboidratos</th>
+                <th scope="col">Proteina</th>
+                <th scope="col">Fibra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let alim of carnes">
+                <td class="ali">{{alim.Nome}}</td>
+                <td>{{alim.Calorias}}</td>
+                <td>{{alim.Gordura}}</td>
+                <td>{{alim.Sodio}}</td>
+                <td>{{alim.Carboidratos}}</td>
+                <td>{{alim.Proteina}}</td>
+                <td>{{alim.Fibra}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-body" id='card-d' [ngStyle]="{'display': displayD}">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Calorias</th>
+                <th scope="col">Gordura</th>
+                <th scope="col">Sodio</th>
+                <th scope="col">Carboidratos</th>
+                <th scope="col">Proteina</th>
+                <th scope="col">Fibra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let alim of doces">
+                <td class="ali">{{alim.Nome}}</td>
+                <td>{{alim.Calorias}}</td>
+                <td>{{alim.Gordura}}</td>
+                <td>{{alim.Sodio}}</td>
+                <td>{{alim.Carboidratos}}</td>
+                <td>{{alim.Proteina}}</td>
+                <td>{{alim.Fibra}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-body" id='card-f' [ngStyle]="{'display': displayF}">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Calorias</th>
+                <th scope="col">Gordura</th>
+                <th scope="col">Sodio</th>
+                <th scope="col">Carboidratos</th>
+                <th scope="col">Proteina</th>
+                <th scope="col">Fibra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let alim of frutas">
+                <td class="ali">{{alim.Nome}}</td>
+                <td>{{alim.Calorias}}</td>
+                <td>{{alim.Gordura}}</td>
+                <td>{{alim.Sodio}}</td>
+                <td>{{alim.Carboidratos}}</td>
+                <td>{{alim.Proteina}}</td>
+                <td>{{alim.Fibra}}</td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="card-body" id='card-v' [ngStyle]="{'display': displayV}">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Calorias</th>
+                <th scope="col">Gordura</th>
+                <th scope="col">Sodio</th>
+                <th scope="col">Carboidratos</th>
+                <th scope="col">Proteina</th>
+                <th scope="col">Fibra</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let alim of vegetais">
+                <td class="ali">{{alim.Nome}}</td>
+                <td>{{alim.Calorias}}</td>
+                <td>{{alim.Gordura}}</td>
+                <td>{{alim.Sodio}}</td>
+                <td>{{alim.Carboidratos}}</td>
+                <td>{{alim.Proteina}}</td>
+                <td>{{alim.Fibra}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>
+</div>
+<div id="footer"></div>    

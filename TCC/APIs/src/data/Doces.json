@@ -1,17 +1,7 @@
 [
     {
-        "id":  0,
-        "Nome": "",
-        "Calorias": 0,
-        "Gordura": 0,
-        "Sodio": 0,
-        "Carboidratos": 0,
-        "Proteina": 0,
-        "Fibra": 0
-    },
-    {
-        "id": 100,
-        "Nome": "Coca-Cola",
+        "id": 1,
+        "Nome": "Brigadeiro",
         "Calorias": 435,
         "Gordura": 0.2,
         "Sodio": 58,
@@ -20,8 +10,8 @@
         "Fibra": 0
     },
     {
-        "id": 101,
-        "Nome": "Suco de Acerola",
+        "id": 2,
+        "Nome": "Bolo",
         "Calorias": 33,
         "Gordura": 0.2,
         "Sodio": 58,

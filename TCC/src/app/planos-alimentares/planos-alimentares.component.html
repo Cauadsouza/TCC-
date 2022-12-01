@@ -1,1 +1,40 @@
-<p>planos-alimentares works!</p>
+<header id="capa_index">
+    <nav class="nav">
+        <img class="logo" src="../../../../assets/INFONUTRI.png">
+        <ul class="menu">
+            <li><a href="../../../../index.html">Início</a></li>
+            <li><a href="dados-nutricionais.html">Dados nutricionais</a></li>
+            <li><a href="exercicios-fisicos.html">Exercicios Fisicas</a></li>
+            <li><a href="info-nutricionais.html">Informações nutricionais</a></li>
+            <li><a href="contagem-calorica.html">Contagem de Calorias</a></li>
+            <li><a href="planos-alimentares.html">Planos alimentares IF</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="card-body">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Calorias</th>
+            <th scope="col">Gordura</th>
+            <th scope="col">Sodio</th>
+            <th scope="col">Carboidratos</th>
+            <th scope="col">Proteina</th>
+            <th scope="col">Fibra</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let alim of AlimentosIF">
+            <td class="ali">{{alim.Nome}}</td>
+            <td>{{alim.Calorias}}</td>
+            <td>{{alim.Gordura}}</td>
+            <td>{{alim.Sodio}}</td>
+            <td>{{alim.Carboidratos}}</td>
+            <td>{{alim.Proteina}}</td>
+            <td>{{alim.Fibra}}</td>
+          </tr>
+        </tbody>
+    </table>
+</div>
+<div id="footer"></div>    

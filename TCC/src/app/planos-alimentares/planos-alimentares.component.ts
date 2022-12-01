@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { LA } from '../Serviços/lista-alimentos';
+import { AlimentosService } from '../Serviços/alimentos.service';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-planos-alimentares',
@@ -6,10 +10,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./planos-alimentares.component.css']
 })
 export class PlanosAlimentaresComponent implements OnInit {
+  alimento = {} as LA;
+  AlimentosIF: LA[] = [];
+  
 
-  constructor() { }
+  constructor(private alimentosService:AlimentosService) {}
+  
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.getAlimentosIF();
+  }
+
+  getAlimentosIF(){
+    this.alimentosService.getAlimentosIF().subscribe((AIF: LA[]) => {
+      this.AlimentosIF = AIF;
+    });
   }
 
 }

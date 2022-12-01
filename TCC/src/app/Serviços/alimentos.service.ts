@@ -9,19 +9,21 @@ import { LA } from './lista-alimentos';
 })
 export class AlimentosService {
 
-  url = 'http://localhost:300/alimentos'; 
+  urlB = 'http://localhost:300/bebidas'; 
+  urlC = 'http://localhost:300/carnes';
+  urlD = 'http://localhost:300/doces';
+  urlF = 'http://localhost:300/frutas';
+  urlV = 'http://localhost:300/vegetais';
+  urlAF ='http://localhost:300/alimentosIF'
 
-  // injetando o HttpClient
   constructor(private httpClient: HttpClient) { }
 
-  // Headers
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-  // Obtem todos os carros
-  getAlimentos(): Observable<LA[]> {
-    return this.httpClient.get<LA[]>(this.url)
+  getBebidas(): Observable<LA[]> {
+    return this.httpClient.get<LA[]>(this.urlB)
      .pipe(
       retry(2),
       catchError(this.handleError)
@@ -29,41 +31,100 @@ export class AlimentosService {
   }
   
 
-  // Obtem um carro pelo id
-  getAlimentoById(id: number): Observable<LA> {
-    return this.httpClient.get<LA>(this.url + '/' + id)
+  getBebidasById(id: number): Observable<LA> {
+    return this.httpClient.get<LA>(this.urlB + '/' + id)
       .pipe(
         retry(2),
         catchError(this.handleError)
       )
   }
 
-  // salva um carro
-  saveAlimento(alimento: LA): Observable<LA> {
-    return this.httpClient.post<LA>(this.url, JSON.stringify(alimento), this.httpOptions)
+  getCarnes(): Observable<LA[]> {
+    return this.httpClient.get<LA[]>(this.urlC)
+     .pipe(
+      retry(2),
+      catchError(this.handleError)
+     )
+  }
+  
+
+  getCarnesById(id: number): Observable<LA> {
+    return this.httpClient.get<LA>(this.urlC + '/' + id)
       .pipe(
         retry(2),
         catchError(this.handleError)
       )
   }
 
-  updateAlimento(alimento: LA): Observable<LA> {
-    return this.httpClient.put<LA>(this.url + '/' + alimento.id, JSON.stringify(alimento), this.httpOptions)
+  getDoces(): Observable<LA[]> {
+    return this.httpClient.get<LA[]>(this.urlD)
+     .pipe(
+      retry(2),
+      catchError(this.handleError)
+     )
+  }
+  
+
+  getDocesById(id: number): Observable<LA> {
+    return this.httpClient.get<LA>(this.urlD + '/' + id)
       .pipe(
-        retry(1),
+        retry(2),
         catchError(this.handleError)
       )
   }
 
-  deleteAlimento(alimento: LA) {
-    return this.httpClient.delete<LA>(this.url + '/' + alimento.id, this.httpOptions)
+  getFrutas(): Observable<LA[]> {
+    return this.httpClient.get<LA[]>(this.urlF)
+     .pipe(
+      retry(2),
+      catchError(this.handleError)
+     )
+  }
+  
+
+  getFrutasById(id: number): Observable<LA> {
+    return this.httpClient.get<LA>(this.urlF + '/' + id)
       .pipe(
-        retry(1),
+        retry(2),
         catchError(this.handleError)
       )
   }
 
-  // Manipulação de erros
+  getVegetais(): Observable<LA[]> {
+    return this.httpClient.get<LA[]>(this.urlV)
+     .pipe(
+      retry(2),
+      catchError(this.handleError)
+     )
+  }
+  
+
+  getVegetaisById(id: number): Observable<LA> {
+    return this.httpClient.get<LA>(this.urlV + '/' + id)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      )
+  }
+
+  getAlimentosIF(): Observable<LA[]> {
+    return this.httpClient.get<LA[]>(this.urlAF)
+     .pipe(
+      retry(2),
+      catchError(this.handleError)
+     )
+  }
+  
+
+  getAlimentosIFById(id: number): Observable<LA> {
+    return this.httpClient.get<LA>(this.urlAF + '/' + id)
+      .pipe(
+        retry(2),
+        catchError(this.handleError)
+      )
+  }
+
+
   handleError(error: HttpErrorResponse) {
     let errorMessage = 'Servidor não esta funcionando';
     if (error.error instanceof ErrorEvent) {

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "Nome": "Maçã",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 2,
+        "Nome": "Acerola",
+        "Calorias": 33,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 80,
+        "Fibra": 0
+    }
+]

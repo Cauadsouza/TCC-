@@ -1,44 +1,139 @@
 const express = require('express');
 const server = express ();
-const Alimentos = require('./src/data/Alimentos.json')
-const AlimentosIF = require('./src/data/AlimnetosIF.json')
+const Bebidas = require('./src/data/Bebidas.json')
+const Carnes = require('./src/data/Carnes.json')
+const Doces = require('./src/data/Doces.json')
+const Frutas = require('./src/data/Frutas.json')
+const Vegetais = require('./src/data/Vegetais.json')
+const AlimentosIF = require('./src/data/AlimentosIF.json')
 
 server.listen(300, () => {
     console.log("Funcionando...")
 });
 
-/*API Alimentos*/
+/*API Bebidas*/
 
-server.get('/alimentos', (req,res) =>{
-    res.json(Alimentos)
+server.get('/bebidas', (req,res) =>{
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(Bebidas)
 });
 
-server.get('/alimentos/:id', (req, res) => {
+server.get('/bebidas/:id', (req, res) => {
     let id = req.params.id;
-    let prod = Alimentos.filter(p => p.id == id)[0];
+    let prod = Bebidas.filter(p => p.id == id)[0];
+    res.header('Access-Control-Allow-Origin','*');
     res.json(prod);    
 })
 
-server.get('/alimentos/nome/:nm', (req, res) => {
+server.get('/bebidas/nome/:nm', (req, res) => {
     let nome = req.params.nm;
-    let nm = Alimentos.filter(n => n.Nome == nome);
+    let nm = Bebidas.filter(n => n.Nome == nome);
+    res.header('Access-Control-Allow-Origin','*');
     res.json(nm);    
 })
+
+/*API Carnes*/
+
+server.get('/carnes', (req,res) =>{
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(Carnes)
+});
+
+server.get('/carnes/:id', (req, res) => {
+    let id = req.params.id;
+    let prod = Carnes.filter(p => p.id == id)[0];
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(prod);    
+})
+
+server.get('/carnes/nome/:nm', (req, res) => {
+    let nome = req.params.nm;
+    let nm = Carnes.filter(n => n.Nome == nome);
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(nm);    
+})
+
+/*API Doces*/
+
+server.get('/doces', (req,res) =>{
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(Doces)
+});
+
+server.get('/doces/:id', (req, res) => {
+    let id = req.params.id;
+    let prod = Doces.filter(p => p.id == id)[0];
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(prod);    
+})
+
+server.get('/doces/nome/:nm', (req, res) => {
+    let nome = req.params.nm;
+    let nm = Doces.filter(n => n.Nome == nome);
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(nm);    
+})
+
+/*API Frutas*/
+
+server.get('/frutas', (req,res) =>{
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(Frutas)
+});
+
+server.get('/frutas/:id', (req, res) => {
+    let id = req.params.id;
+    let prod = Frutas.filter(p => p.id == id)[0];
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(prod);    
+})
+
+server.get('/frutas/nome/:nm', (req, res) => {
+    let nome = req.params.nm;
+    let nm = Frutas.filter(n => n.Nome == nome);
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(nm);    
+})
+
+/*API Vegetais*/
+
+server.get('/vegetais', (req,res) =>{
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(Vegetais)
+});
+
+server.get('/vegetais/:id', (req, res) => {
+    let id = req.params.id;
+    let prod = Vegetais.filter(p => p.id == id)[0];
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(prod);    
+})
+
+server.get('/vegetais/nome/:nm', (req, res) => {
+    let nome = req.params.nm;
+    let nm = Vegetais.filter(n => n.Nome == nome);
+    res.header('Access-Control-Allow-Origin','*');
+    res.json(nm);    
+})
+
 
 /*API AlimentosIF*/
 
 server.get('/alimentosIF', (req,res) =>{
+    res.header('Access-Control-Allow-Origin','*');
     res.json(AlimentosIF)
 });
 
 server.get('/alimentosIF/:id', (req, res) => {
     let id = req.params.id;
     let prod = AlimentosIF.filter(p => p.id == id)[0];
+    res.header('Access-Control-Allow-Origin','*');
     res.json(prod);    
 })
 
 server.get('/alimentosIF/nome/:nm', (req, res) => {
     let nome = req.params.nm;
     let nm = AlimentosIF.filter(n => n.Nome == nome);
+    res.header('Access-Control-Allow-Origin','*');
     res.json(nm);    
 })

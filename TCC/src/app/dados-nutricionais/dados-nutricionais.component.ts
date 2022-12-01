@@ -11,51 +11,49 @@ import { NgForm } from '@angular/forms';
 export class DadosNutricionaisComponent implements OnInit{
   
   alimento = {} as LA;
-  alimentos: LA[] = [];
+  bebidas: LA[] = [];
+  carnes: LA[] = [];
+  doces: LA[] = [];
+  frutas: LA[] = [];
+  vegetais: LA[] = [];
   
   constructor(private alimentosService:AlimentosService) {}
   
   ngOnInit() {
-    this.getAlimentos();
+    this.getBebidas();
+    this.getCarnes();
+    this.getDoces();
+    this.getFrutas();
+    this.getVegetais();
   }
 
-  // defini se um carro será criado ou atualizado
-  saveAlimento(form: NgForm) {
-    if (this.alimento.id !== undefined) {
-      this.alimentosService.updateAlimento(this.alimento).subscribe(() => {
-        this.cleanForm(form);
-      });
-    } else {
-      this.alimentosService.saveAlimento(this.alimento).subscribe(() => {
-        this.cleanForm(form);
-      });
-    }
+  getBebidas() {
+    this.alimentosService.getBebidas().subscribe((bebidas: LA[]) => {
+      this.bebidas = bebidas;
+    });
   }
-
-  // Chama o serviço para obtém todos os carros
-  getAlimentos() {
-    this.alimentosService.getAlimentos().subscribe((alimentos: LA[]) => {
-      this.alimentos = alimentos;
+  getCarnes() {
+    this.alimentosService.getCarnes().subscribe((carnes: LA[]) => {
+      this.carnes = carnes;
     });
   }
 
-  // deleta um carro
-  deleteAlimento(alimento: LA) {
-    this.alimentosService.deleteAlimento(alimento).subscribe(() => {
-      this.getAlimentos();
+  getDoces() {
+    this.alimentosService.getDoces().subscribe((doces: LA[]) => {
+      this.doces = doces;
     });
   }
 
-  // copia o carro para ser editado.
-  editAlimento(alimento: LA) {
-    this.alimento = { ...alimento };
+  getFrutas() {
+    this.alimentosService.getFrutas().subscribe((frutas: LA[]) => {
+      this.frutas = frutas;
+    });
   }
 
-  // limpa o formulario
-  cleanForm(form: NgForm) {
-    this.getAlimentos();
-    form.resetForm();
-    this.alimento = {} as LA;
+  getVegetais() {
+    this.alimentosService.getVegetais().subscribe((vegetais: LA[]) => {
+      this.vegetais = vegetais;
+    });
   }
 
 }

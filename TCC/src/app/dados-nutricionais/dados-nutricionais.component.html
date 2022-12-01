@@ -1,41 +1,13 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active" aria-current="page">Gerenciamento de alimentos</li>
-  </ol>
-</nav>
-<div class="container">
-  <div class="card list-car">
-    <h5 class="card-header">Lista de alimentos</h5>
-    <div class="card-body">
-      <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">Id</th>
-              <th scope="col">Nome</th>
-              <th scope="col">Calorias</th>
-              <th scope="col">Gordura</th>
-              <th scope="col">Sodio</th>
-              <th scope="col">Carboidratos</th>
-              <th scope="col">Proteina</th>
-              <th scope="col">Fibra</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr *ngFor="let alim of alimentos">
-              <td>{{alim.id}}</td>
-              <td>{{alim.Nome}}</td>
-              <td>{{alim.Calorias}}</td>
-              <td>{{alim.Gordura}}</td>
-              <td>{{alim.Sodio}}</td>
-              <td>{{alim.Carboidratos}}</td>
-              <td>{{alim.Proteina}}</td>
-              <td>{{alim.Fibra}}</td>
-              <td>
-                <button type="button" class="btn btn-warning btn-sm" (click)="editAlimento(alimento)">Editar</button>
-                <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deleteAlimento(alimento)">Deletar</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-    </div>
-  </div>
+<header id="capa_index">
+  <nav class="nav">
+      <img class="logo" src="../../../../assets/INFONUTRI.png">
+      <ul class="menu">
+          <li><a href="index.html">Início</a></li>
+          <li><a href="dados-nutricionais.html">Dados nutricionais</a></li>
+          <li><a href="exercicios-fisicos.html">Exercicios Fisicas</a></li>
+          <li><a href="../info-nutricionais/info-nutricionais.component.html">Informações nutricionais</a></li>
+          <li><a href="contagem-calorica.html">Contagem de Calorias</a></li>
+          <li><a href="planos-alimentares.html">Planos alimentares IF</a></li>
+      </ul>
+  </nav>
+</header>

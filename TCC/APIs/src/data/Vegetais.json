@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "Nome": "Batata",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 2,
+        "Nome": "Arroz",
+        "Calorias": 33,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 80,
+        "Fibra": 0
+    }
+]
