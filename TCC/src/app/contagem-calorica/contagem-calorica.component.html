@@ -1,37 +1,52 @@
-<body>
-    <main>
-        <div class="container">
-            <h2>Calcular Calorias Diárias</h2>
-            <section id="contagem-calorica">
-                <div>
-                    <h2>Qual o seu sexo?</h2>
-                    <input type="button" value="Homem"/>
-                    <input type="button" value="Mulher"/>
-                </div>
-                <div>
-                    <h2>Qual a sua idade?</h2>
-                    <input type="number" id="idade" value="idade">
-                    <label for="idade">anos</label>
-                </div>
-                <div>
-                    <h2>Qual a sua altura?</h2>
-                    <input type="number" id="altura" value="altura">
-                    <label for="altura">cm</label>
-                </div>
-                <div>
-                    <h2>Qual o seu peso?</h2>
-                    <input type="number" id="peso" value="peso">
-                    <label for="peso">kg</label>
-                </div>
-                <div>
-                    <h2>Qual é o seu nível de atividade diária?</h2>
-                    <input type="button" value="Atividade leve"/>
-                    <input type="button" value="Atividade Moderada"/>
-                    <input type="button" value="Atividade intensa"/>
-                </div>
-                <button type="button" class="Calcular" (click)="Calcular()">Calcule calorias diárias necessárias</button>
-            </section>
+<section id="forms-container">
+    <form [formGroup]="GCform">
+        <section id="forms-box">
+            <div >
+                <label for="peso">Peso</label>
+                <input type="number" class="form-control" name="peso" id="peso" formControlName="peso">
+            </div>
+            <div >
+                <label for="altura">Altura</label>
+                <input type="number" class="form-control" name="altura" id="altura" formControlName="altura">
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade</label>
+                <input type="number" class="form-control" name="idade" id="idade" formControlName="idade">
+            </div>
+        </section>
+        
+        <section id="forms-box">
+        <div class="form-group">
+          <label>Gênero</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="masculino" [value]="1" formControlName="genero">
+            <label class="form-check-label" for="masculino">Masculino</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="genero" id="feminino" [value]="2" formControlName="genero">
+            <label class="form-check-label" for="feminino">Feminino</label>
+          </div>
         </div>
-    </main>
-    <footer id="footer"></footer>
-</body>
+      
+        <div class="form-group">
+            <label>Fator de Atividade Fisica</label>
+        
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="fator" id="leve" [value]="1" formControlName="fator">
+              <label class="form-check-label" for="leve">Leve</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="fator" id="moderado" [value]="2" formControlName="fator">
+              <label class="form-check-label" for="moderado">Moderado</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="fator" id="intenso" [value]="3" formControlName="fator">
+                <label class="form-check-label" for="moderado">Intenso</label>
+            </div>
+        </div>
+    </section>
+        <input type="button" class="btn btn-primary mt-4" value="Calorias Diarias Gastas" [disabled]="GCform.invalid" (click)="Calcular()">
+    </form>
+    <p>{{resultado}}</p>
+</section>
+<div id="footer"></div> 

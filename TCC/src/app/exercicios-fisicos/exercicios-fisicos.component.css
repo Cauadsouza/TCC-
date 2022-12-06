@@ -1,0 +1,96 @@
+#section-exercicios{
+    width: 100%;
+    height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #137474;
+}
+
+.text_carrosel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#catalogo_favoritos,#catalogo_livros {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#catalogo_sagas {
+    background-color: #137474;
+}
+
+#catalogo_livros {
+    background-color: #B46746;
+}
+
+.text_carrosel p {
+    width: 60vw;
+}
+
+.text_catalogo h1, .text_catalogo h1 {
+    width: 60vw;
+    margin-bottom: 2vh;
+}
+
+.exerc-box {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 1rem;
+    max-width: 90%;
+}
+.cards_itens{
+    display: inline-block;
+    transition: all.2 ease-in-out;
+    padding: 1%;
+}
+.cards_itens video{
+    cursor: pointer;
+}
+
+#letras{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    width: 40vw;
+}
+
+#titulo_livro{
+    font-family: Oswald;
+    color: #3B0918;
+    white-space: normal;
+    font-size: 35px;
+}
+
+#autor{
+    font-size: 20px;
+    font-family: Ubuntu;
+    white-space: normal;
+}
+
+#texto_sinopse{
+    font-size: 14px;
+    color: black;
+    white-space: normal;
+}
+
+#marca_cruzada{
+    position:relative;
+    top: -28vh;
+}
+
+.ap_liv{
+    position: relative;
+    top: 20vh;
+    opacity: none;    
+}
