@@ -117,8 +117,50 @@ export class GastoCalorico {
     }*/
     
     calcularPI(){
+        let IMC = this.peso/((this.altura/100)**2)
+        if(IMC < 16){
 
+        }
+        else if(IMC > 16 && IMC < 17){
+
+        }
+        else if(IMC > 17 && IMC < 18.5){
+
+        }
+        else if(IMC > 18.5 && IMC < 25){
+            
+        }
+        else if(IMC > 25 && IMC < 30){
+            
+        }
+        else if(IMC > 30 && IMC < 35){
+            
+        }
+        else if(IMC > 35 && IMC < 40){
+            
+        }
+        else if(IMC > 40){
+            
+        }
     }
+
+/* `Atualmente seu índice de massa corporal está adequado, é recomendado continuar com o atual consumo de calorias diarias`
+   `Atualmente seu índice de massa corporal está acima do adequado, é recomendado diminuir o consumo e aumentar os de calorias diarias`
+   `Atualmente seu índice de massa corporal está acima do adequado, é recomendado aumentar o consumo e diminuir os de calorias diarias`
+
+
+       PARA PERDER PESO 
+Calorias ingeridas diarialmente
+   {{resultado - 500}} até {{resultado - 1000}} kcal
+
+       PARA MANTER O PESO 
+Calorias ingeridas diarialmente
+   {{resultado - 0}} até {{resultado - 200}} kcal
+
+       PARA GANHAR PESO     
+Calorias ingeridas diarialmente
+   {{resultado + 500}} até {{resultado + 1000}} kcal
+*/
 }
 
 

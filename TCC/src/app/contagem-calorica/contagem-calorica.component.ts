@@ -10,11 +10,13 @@ import { GastoCalorico } from './gasto-calorico';
 export class ContagemCaloricaComponent implements OnInit {
   GCform: FormGroup;
   resultado: number;
-  resultadoPI: number;
+  resultadoPI: string;
+  IMC: number;
 
   constructor(private fb: FormBuilder) { 
     this.resultado = 0;
-    this.resultadoPI = 0;
+    this.resultadoPI = "";
+    this.IMC = 0;
     this.GCform = this.fb.group({
       peso: [0, [Validators.required, Validators.min(1), Validators.max(100)]],
       idade: [0, [Validators.required,Validators.min(1), Validators.max(100)]],
@@ -35,7 +37,7 @@ export class ContagemCaloricaComponent implements OnInit {
   CalcularPI(){
     let infos = this.GCform.value;
     let bol = new GastoCalorico(infos.peso, infos.genero, infos.idade, infos.fator, infos.altura)
-    this.resultadoPI = bol.calcular();
+    this.resultadoPI = bol.calcularPI();
   }
   
 
