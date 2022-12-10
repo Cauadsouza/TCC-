@@ -64,83 +64,167 @@ export class GastoCalorico {
     }
 
     calcular(){
-        if(this.genero == 2){
-        return(
-        ((this.peso * 14.818) + 486.6))}
-        else{
-        return(
-            ((this.peso * 15.057) + 692.2))}
-    }
-/*
-    calcular(){
+    if(this.fator == 1){
         if(this.idade >= 0 && this.idade <=3 && this.genero == 2){
         return(
-        ((this.peso * 58.317) - 31.1))}
+        ((this.peso * 58.317) - 31.1)* 1.55)}
         else if(this.idade >= 0 && this.idade <=3 && this.genero == 1){
         return(
-            ((this.peso * 59.512) - 30.4))}
+            ((this.peso * 59.512) - 30.4)* 1.55)}
 
         else if(this.idade >= 4 && this.idade <=10 && this.genero == 2){
         return(
-        ((this.peso * 20.315) + 485.9))}
+        ((this.peso * 20.315) + 485.9)* 1.55)}
         else if(this.idade >= 4 && this.idade <=10 && this.genero == 1){
         return(
-            ((this.peso * 22.706) +  504.3))}
+            ((this.peso * 22.706) +  504.3)* 1.55)}
 
         else if(this.idade >= 11 && this.idade <=18 && this.genero == 2){
         return(
-        ((this.peso * 13.384 ) + 692.6))}
+        ((this.peso * 13.384 ) + 692.6)* 1.55)}
         else if(this.idade >= 11 && this.idade <=18 && this.genero == 1){
         return(
-            ((this.peso * 17.686) + 658.2))}
+            ((this.peso * 17.686) + 658.2)* 1.55)}
 
         else if(this.idade >= 19 && this.idade <=30 && this.genero == 2){
         return(
-        ((this.peso * 14.818) + 486.6))}
+        ((this.peso * 14.818) + 486.6)* 1.55)}
         else if(this.idade >= 19 && this.idade <=30 && this.genero == 1){
         return(
-            ((this.peso * 15.057) + 692.2))}
+            ((this.peso * 15.057) + 692.2)* 1.55)}
 
         else if(this.idade >= 31 && this.idade <=60 && this.genero == 2){
         return(
-        ((this.peso * 8.126) + 845.6))}
+        ((this.peso * 8.126) + 845.6)* 1.55)}
         else if(this.idade >= 31 && this.idade <=60 && this.genero == 1){
         return(
-            ((this.peso * 11.472) + 873.1))}
+            ((this.peso * 11.472) + 873.1)* 1.55)}
 
         else if(this.idade >= 61 && this.genero == 2){
         return(
-        ((this.peso * 9.082) +  658.5))}
+        ((this.peso * 9.082) +  658.5)* 1.55)}
         else if(this.idade >= 4 && this.genero == 1){
         return(
-            ((this.peso * 11.711) + 587.7))}
-    }*/
+            ((this.peso * 11.711) + 587.7)* 1.55)}
+        else{
+            return (0)
+        }}
+    else if(this.fator == 2){
+            if(this.idade >= 0 && this.idade <=3 && this.genero == 2){
+        return(
+        ((this.peso * 58.317) - 31.1)* 1.84)}
+        else if(this.idade >= 0 && this.idade <=3 && this.genero == 1){
+        return(
+            ((this.peso * 59.512) - 30.4)* 1.84)}
+
+        else if(this.idade >= 4 && this.idade <=10 && this.genero == 2){
+        return(
+        ((this.peso * 20.315) + 485.9)* 1.84)}
+        else if(this.idade >= 4 && this.idade <=10 && this.genero == 1){
+        return(
+            ((this.peso * 22.706) +  504.3)* 1.84)}
+
+        else if(this.idade >= 11 && this.idade <=18 && this.genero == 2){
+        return(
+        ((this.peso * 13.384 ) + 692.6)* 1.84)}
+        else if(this.idade >= 11 && this.idade <=18 && this.genero == 1){
+        return(
+            ((this.peso * 17.686) + 658.2)* 1.84)}
+
+        else if(this.idade >= 19 && this.idade <=30 && this.genero == 2){
+        return(
+        ((this.peso * 14.818) + 486.6)* 1.84)}
+        else if(this.idade >= 19 && this.idade <=30 && this.genero == 1){
+        return(
+            ((this.peso * 15.057) + 692.2)* 1.84)}
+
+        else if(this.idade >= 31 && this.idade <=60 && this.genero == 2){
+        return(
+        ((this.peso * 8.126) + 845.6)* 1.84)}
+        else if(this.idade >= 31 && this.idade <=60 && this.genero == 1){
+        return(
+            ((this.peso * 11.472) + 873.1)* 1.84)}
+
+        else if(this.idade >= 61 && this.genero == 2){
+        return(
+        ((this.peso * 9.082) +  658.5)* 1.84)}
+        else if(this.idade >= 4 && this.genero == 1){
+        return(
+            ((this.peso * 11.711) + 587.7)* 1.84)}
+        else{
+            return (0)
+        }
+        }
+    else{
+            if(this.idade >= 0 && this.idade <=3 && this.genero == 2){
+        return(
+        ((this.peso * 58.317) - 31.1)* 2.2)}
+        else if(this.idade >= 0 && this.idade <=3 && this.genero == 1){
+        return(
+            ((this.peso * 59.512) - 30.4)* 2.2)}
+
+        else if(this.idade >= 4 && this.idade <=10 && this.genero == 2){
+        return(
+        ((this.peso * 20.315) + 485.9)* 2.2)}
+        else if(this.idade >= 4 && this.idade <=10 && this.genero == 1){
+        return(
+            ((this.peso * 22.706) +  504.3)* 2.2)}
+
+        else if(this.idade >= 11 && this.idade <=18 && this.genero == 2){
+        return(
+        ((this.peso * 13.384 ) + 692.6)* 2.2)}
+        else if(this.idade >= 11 && this.idade <=18 && this.genero == 1){
+        return(
+            ((this.peso * 17.686) + 658.2)* 2.2)}
+
+        else if(this.idade >= 19 && this.idade <=30 && this.genero == 2){
+        return(
+        ((this.peso * 14.818) + 486.6)* 2.2)}
+        else if(this.idade >= 19 && this.idade <=30 && this.genero == 1){
+        return(
+            ((this.peso * 15.057) + 692.2)* 2.2)}
+
+        else if(this.idade >= 31 && this.idade <=60 && this.genero == 2){
+        return(
+        ((this.peso * 8.126) + 845.6)* 2.2)}
+        else if(this.idade >= 31 && this.idade <=60 && this.genero == 1){
+        return(
+            ((this.peso * 11.472) + 873.1)* 2.2)}
+
+        else if(this.idade >= 61 && this.genero == 2){
+        return(
+        ((this.peso * 9.082) +  658.5)* 2.2)}
+        else if(this.idade >= 4 && this.genero == 1){
+        return(
+            ((this.peso * 11.711) + 587.7)* 2.2)}
+        else{
+            return (0)
+        }
+        }
+    }
     
     calcularPI(){
         let IMC = this.peso/((this.altura/100)**2)
-        if(IMC < 16){
-
-        }
-        else if(IMC > 16 && IMC < 17){
-
-        }
-        else if(IMC > 17 && IMC < 18.5){
-
+        if(IMC < 18.5){
+            return (1)
         }
         else if(IMC > 18.5 && IMC < 25){
-            
+            return (2)
         }
         else if(IMC > 25 && IMC < 30){
-            
+            return (3)
         }
         else if(IMC > 30 && IMC < 35){
-            
+            return (3)
         }
         else if(IMC > 35 && IMC < 40){
-            
+            return (3)
         }
         else if(IMC > 40){
-            
+            return (3)
+        }
+        else{
+            return (0)
         }
     }
 

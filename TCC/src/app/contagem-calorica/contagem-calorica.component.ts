@@ -11,12 +11,17 @@ export class ContagemCaloricaComponent implements OnInit {
   GCform: FormGroup;
   resultado: number;
   resultadoPI: string;
-  IMC: number;
+  resultadoIMC: number;
+  resultadoID: string;
+  displayC = 'displayC';
+  displayPI = 'displayP';
+  displayN = 'displayN';
 
   constructor(private fb: FormBuilder) { 
     this.resultado = 0;
     this.resultadoPI = "";
-    this.IMC = 0;
+    this.resultadoIMC = 0;
+    this.resultadoID = "";
     this.GCform = this.fb.group({
       peso: [0, [Validators.required, Validators.min(1), Validators.max(100)]],
       idade: [0, [Validators.required,Validators.min(1), Validators.max(100)]],
@@ -30,15 +35,42 @@ export class ContagemCaloricaComponent implements OnInit {
 
   Calcular() {
     let infos = this.GCform.value;
-    let bol = new GastoCalorico(infos.peso, infos.genero, infos.idade, infos.fator, infos.altura)
+    let bol = new GastoCalorico(infos.peso, infos.genero, infos.idade, infos.fator, infos.altura);
     this.resultado = bol.calcular();
+    this.displayC = 'flex';
+    this.displayN = 'none';
+    this.displayPI = 'none';
   }
 
   CalcularPI(){
     let infos = this.GCform.value;
     let bol = new GastoCalorico(infos.peso, infos.genero, infos.idade, infos.fator, infos.altura)
-    this.resultadoPI = bol.calcularPI();
+    this.resultadoIMC = bol.calcularPI();
+    if(this.resultadoIMC == 2){
+      this.resultadoPI = `Atualmente seu índice de massa corporal está adequado, é recomendado continuar com o atual consumo de calorias diarias`
+    }
+    else if(this.resultadoIMC == 3){
+      this.resultadoPI = `Atualmente seu índice de massa corporal está acima do adequado, é recomendado diminuir o consumo e aumentar os de calorias diarias`
+    }
+    else if(this.resultadoIMC == 1){
+      this.resultadoPI = `Atualmente seu índice de massa corporal está abaixo do adequado, é recomendado aumentar o consumo e diminuir os de calorias diarias`
+    }
+    else{
+      this.resultadoPI = ''
+    }
+    this.displayPI = 'flex';
+    this.displayC = 'none';
+    this.displayN = 'none';
+  }
+
+  CalcularID(){
+    let infos = this.GCform.value;
+    let bol = new GastoCalorico(infos.peso, infos.genero, infos.idade, infos.fator, infos.altura)
+    this.resultadoIMC = bol.calcularPI();
+    this.resultado = bol.calcular();
+    this.displayN = 'flex';
+    this.displayPI = 'none';
+    this.displayC = 'none';
   }
   
-
 }

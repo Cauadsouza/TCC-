@@ -1,23 +1,33 @@
 <section id="forms-container">
+  <h1>Lorem ipsum dolor</h1>
     <form [formGroup]="GCform">
         <section id="forms-box">
-            <div >
-                <label for="peso">Peso</label>
+            <div class="forms-numbers">
+                <label for="peso"><h3>Qual o seu peso?</h3></label>
+                <div class="forms-metricas">
                 <input type="number" class="form-control" name="peso" id="peso" formControlName="peso">
+                <label for="peso">kg</label>
+                </div>
             </div>
-            <div >
-                <label for="altura">Altura</label>
+            <div class="forms-numbers">
+                <label for="altura"><h3>Qual a sua altura?</h3></label>
+                <div class="forms-metricas">
                 <input type="number" class="form-control" name="altura" id="altura" formControlName="altura">
+                <label for="peso">m</label>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="idade">Idade</label>
+            <div class="forms-numbers">
+                <label for="idade"><h3>Qual a sua idade?</h3></label>
+                <div class="forms-metricas">
                 <input type="number" class="form-control" name="idade" id="idade" formControlName="idade">
+                <label for="peso">anos</label>
+                </div>
             </div>
         </section>
-        
         <section id="forms-box">
         <div class="form-group">
-          <label>Gênero</label>
+          <label><h3>Qual o seu Sexo?</h3></label>
+        <div class="form-grupo">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="genero" id="masculino" [value]="1" formControlName="genero">
             <label class="form-check-label" for="masculino">Masculino</label>
@@ -27,10 +37,11 @@
             <label class="form-check-label" for="feminino">Feminino</label>
           </div>
         </div>
+        </div>
       
         <div class="form-group">
-            <label>Fator de Atividade Fisica</label>
-        
+            <label><h3>Fator de Atividade Fisica</h3></label>
+            <div class="form-grupo">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="fator" id="leve" [value]="1" formControlName="fator">
               <label class="form-check-label" for="leve">Leve</label>
@@ -43,10 +54,43 @@
                 <input class="form-check-input" type="radio" name="fator" id="intenso" [value]="3" formControlName="fator">
                 <label class="form-check-label" for="moderado">Intenso</label>
             </div>
+          </div>
         </div>
     </section>
-        <input type="button" class="btn btn-primary mt-4" value="Calorias Diarias Gastas" [disabled]="GCform.invalid" (click)="Calcular()">
+    <section id="resultados">
+      <div>
+        <input type="button" class="btn btr" value="Calorias Diarias Gastas" [disabled]="GCform.invalid" (click)="Calcular()">
+      </div>
+      <div>
+        <input type="button" class="btn bt" value="Peso Ideal" [disabled]="GCform.invalid" (click)="CalcularPI()">
+      </div>
+      <div >
+        <input type="button" class="btn" value="Calcule calorias diárias necessárias"[disabled]="GCform.invalid" (click)="CalcularID()">
+      </div>
+    </section>
     </form>
-    <p>{{resultado}}</p>
+    <div id="displayC" [ngStyle]="{'display': displayC}">
+      <p>{{resultado}}</p>
+    </div>
+    <div id="displayP" [ngStyle]="{'display': displayPI}">
+      <p id="resultadoPI">{{resultadoPI}}</p>
+    </div>
+    <div id="displayN" [ngStyle]="{'display': displayN}">
+      <div class="CCDN-box">
+        <h2>PARA PERDER PESO</h2>
+        <p>Calorias ingeridas diariamente</p>
+        <p>{{resultado - 500}} até {{resultado - 1000}} kcal</p>
+      </div>
+      <div class="CCDN-box">
+        <h2>PARA MANTER O PESO</h2>
+        <p>Calorias ingeridas diariamente</p>
+        <p>{{resultado - 0}} até {{resultado - 200}} kcal</p>
+      </div>
+      <div class="CCDN-box">
+        <h2>PARA GANHAR PESO</h2>
+        <p>Calorias ingeridas diariamente</p>
+        <p>{{resultado + 500}} até {{resultado + 1000}} kcal</p>
+      </div>
+    </div>
 </section>
 <div id="footer"></div> 
