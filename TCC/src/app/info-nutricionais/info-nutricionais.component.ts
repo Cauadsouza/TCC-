@@ -28,7 +28,7 @@ export class InfoNutricionaisComponent implements OnInit {
   ngOnInit() {
     this.getBebidas();
     this.getCarnes();
-    this.getDoces();
+    this.getVariados();
     this.getFrutas();
     this.getVegetais();
   }
@@ -44,8 +44,8 @@ export class InfoNutricionaisComponent implements OnInit {
     });
   }
 
-  getDoces() {
-    this.alimentosService.getDoces().subscribe((doces: LA[]) => {
+  getVariados() {
+    this.alimentosService.getVariados().subscribe((doces: LA[]) => {
       this.doces = doces;
     });
   }

@@ -1,6 +1,7 @@
 
 main{
     background-color: #137474;
+    height: 570vh;
 }
 
 #apresentacao {
@@ -56,12 +57,16 @@ main{
 }
 
 #box_ap {
-    width: 30vw;
+    width: 35vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+}
+
+#box_ap h1{
+    text-align: center;
 }
 
 .box_ap2{
@@ -89,7 +94,6 @@ main{
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
     height: 20px;
     width: 100px;
 }
@@ -100,10 +104,32 @@ main{
 
 @media (max-width:950px){
     .box{
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .box-reverse{
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    #box_ap{
+        width: 70vw;
+        padding: 10vh;
+        border: none;
+    }
+
+    #ap_img{
+        margin-bottom: 3vh;
+    }
+}
+
+@media (max-width:650px){
+    #box_ap{
+        width: 80vw;
+        padding: 8vh;
+    }
+
+    #ap_img{
+        width: 50vw;
+        height: 50vh;
     }
 }

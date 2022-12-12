@@ -11,7 +11,7 @@ export class AlimentosService {
 
   urlB = 'http://localhost:300/bebidas'; 
   urlC = 'http://localhost:300/carnes';
-  urlD = 'http://localhost:300/doces';
+  urlD = 'http://localhost:300/variados';
   urlF = 'http://localhost:300/frutas';
   urlV = 'http://localhost:300/vegetais';
   urlAF ='http://localhost:300/alimentosIF'
@@ -56,7 +56,7 @@ export class AlimentosService {
       )
   }
 
-  getDoces(): Observable<LA[]> {
+  getVariados(): Observable<LA[]> {
     return this.httpClient.get<LA[]>(this.urlD)
      .pipe(
       retry(2),
@@ -65,7 +65,7 @@ export class AlimentosService {
   }
   
 
-  getDocesById(id: number): Observable<LA> {
+  getVariadosById(id: number): Observable<LA> {
     return this.httpClient.get<LA>(this.urlD + '/' + id)
       .pipe(
         retry(2),

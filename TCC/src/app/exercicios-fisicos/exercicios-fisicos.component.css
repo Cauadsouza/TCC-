@@ -1,12 +1,171 @@
 #section-exercicios{
     width: 100%;
-    height: 105vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: #137474;
+    padding-top: 15vh;
 }
+
+.ap_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    width: 35vw;
+}
+
+iframe{
+    width: 30vw;
+    height: 35vh;
+    border-radius: 20px;
+    border: 4px solid #f54828;
+}
+
+.ap_text h1{
+    text-align: center;
+    letter-spacing: 1.23px;
+}
+
+.divisoria{
+    letter-spacing: 1.23px;
+}
+
+#bracos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
+}
+
+#ombros{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vw;
+}
+
+#abdomen{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vw;
+}
+
+#peitoral{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vw;
+}
+
+#costas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vw;
+}
+
+#pernas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 8vw;
+    padding-top: 8vw;
+}
+
+#flexboxleft{
+    border-radius: 8px;
+    border-left: 10px solid #f54828;
+    padding-left: 4vw;
+    padding-right: 10vw;
+}
+
+#flexboxright{
+    border-radius: 8px;
+    border-right: 10px solid #f54828;
+    padding-left: 10vw;
+    padding-right: 4vw;
+}
+
+@media (max-width:950px){
+    #bracos{
+        flex-direction: column;
+    }
+    
+    #ombros{
+        flex-direction: column-reverse;
+    }
+    
+    #abdomen{
+        flex-direction: column;
+    }
+    
+    #peitoral{
+        flex-direction: column-reverse;
+    }
+    
+    #costas{
+        flex-direction: column;
+    }
+    
+    #pernas{
+        flex-direction: column-reverse;
+    }
+    
+    .ap_text{
+        width: 70vw;
+        padding: 10vh;
+        border: none;
+    }
+
+    #flexboxright, #flexboxleft{
+        border: none;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    iframe{
+        width: 50vw;
+    }
+}
+
+@media (max-width:650px){
+    .ap_text{
+        width: 80vw;
+        padding: 8vh;
+    }
+
+    iframe{
+        width: 80vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .text_carrosel{
     display: flex;
@@ -54,39 +213,6 @@
 }
 .cards_itens video{
     cursor: pointer;
-}
-
-#letras{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-items: center;
-    width: 40vw;
-}
-
-#titulo_livro{
-    font-family: Oswald;
-    color: #3B0918;
-    white-space: normal;
-    font-size: 35px;
-}
-
-#autor{
-    font-size: 20px;
-    font-family: Ubuntu;
-    white-space: normal;
-}
-
-#texto_sinopse{
-    font-size: 14px;
-    color: black;
-    white-space: normal;
-}
-
-#marca_cruzada{
-    position:relative;
-    top: -28vh;
 }
 
 .ap_liv{

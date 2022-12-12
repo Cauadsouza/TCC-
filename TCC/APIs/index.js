@@ -2,7 +2,7 @@ const express = require('express');
 const server = express ();
 const Bebidas = require('./src/data/Bebidas.json')
 const Carnes = require('./src/data/Carnes.json')
-const Doces = require('./src/data/Doces.json')
+const Variados = require('./src/data/Variados.json')
 const Frutas = require('./src/data/Frutas.json')
 const Vegetais = require('./src/data/Vegetais.json')
 const AlimentosIF = require('./src/data/AlimentosIF.json')
@@ -53,23 +53,23 @@ server.get('/carnes/nome/:nm', (req, res) => {
     res.json(nm);    
 })
 
-/*API Doces*/
+/*API Variados*/
 
-server.get('/doces', (req,res) =>{
+server.get('/variados', (req,res) =>{
     res.header('Access-Control-Allow-Origin','*');
-    res.json(Doces)
+    res.json(Variados)
 });
 
-server.get('/doces/:id', (req, res) => {
+server.get('/variados/:id', (req, res) => {
     let id = req.params.id;
-    let prod = Doces.filter(p => p.id == id)[0];
+    let prod = Variados.filter(p => p.id == id)[0];
     res.header('Access-Control-Allow-Origin','*');
     res.json(prod);    
 })
 
-server.get('/doces/nome/:nm', (req, res) => {
+server.get('/variados/nome/:nm', (req, res) => {
     let nome = req.params.nm;
-    let nm = Doces.filter(n => n.Nome == nome);
+    let nm = Variados.filter(n => n.Nome == nome);
     res.header('Access-Control-Allow-Origin','*');
     res.json(nm);    
 })

@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "Nome": "Coca-Cola",
+        "Nome": "Café",
         "Calorias": 435,
         "Gordura": 0.2,
         "Sodio": 58,
@@ -11,12 +11,142 @@
     },
     {
         "id": 2,
-        "Nome": "Suco de Acerola",
+        "Nome": "Coca-Cola",
         "Calorias": 33,
         "Gordura": 0.2,
         "Sodio": 58,
         "Carboidratos": 8.2,
         "Proteina": 80,
+        "Fibra": 0
+    },
+    {
+        "id": 3,
+        "Nome": "Pepsi",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 4,
+        "Nome": "Guaraná",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 5,
+        "Nome": "Suco de abacaxi",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 6,
+        "Nome": "Suco de acerola",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 7,
+        "Nome": "Suco de Caju",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 8,
+        "Nome": "Suco de Goiaba",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 9,
+        "Nome": "Suco de Manga",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 10,
+        "Nome": "Suco de Limão",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 11,
+        "Nome": "Suco de Uva",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 12,
+        "Nome": "Suco de Laranja",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 13,
+        "Nome": "Suco de maracuja",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 14,
+        "Nome": "Suco de caja",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
+        "Fibra": 0
+    },
+    {
+        "id": 15,
+        "Nome": "Leite",
+        "Calorias": 435,
+        "Gordura": 0.2,
+        "Sodio": 58,
+        "Carboidratos": 8.2,
+        "Proteina": 0.8,
         "Fibra": 0
     }
 ]
