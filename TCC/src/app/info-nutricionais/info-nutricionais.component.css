@@ -82,3 +82,33 @@
     width: 16.8vw;
 }
 
+/*Responsividae*/
+
+@media (max-width:800px){
+    #Dados-Alimentos{
+        flex-direction: column;
+    }
+
+    #lista-alimentos{
+        width: 100vw;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        line-height: 0;
+        color: white;
+        margin-top: 7vh;
+    }
+
+    #div-alimentos ul{
+        flex-direction: row;
+    }
+
+    #dados-alimentos{
+        background-color: #036564;
+    }
+
+    .LAs li{
+        width: 10vw;
+        height: 5vh;
+    }
+}

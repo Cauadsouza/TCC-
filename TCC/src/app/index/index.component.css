@@ -3,10 +3,6 @@ main{
     background-color: #137474;
 }
 
-nav{
-    position: fixed;
-}
-
 #apresentacao {
     background-image: url(/assets/fundo-texturizado.jpg);
     background-size: cover;
@@ -52,6 +48,7 @@ nav{
 #ap_img {
     height: 60vh;
     border-radius: 50%;
+    border: 4px solid #f54828;
 }
 
 #ap_texto {
@@ -64,7 +61,19 @@ nav{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10em;
+    border-radius: 8px;
+}
+
+.box_ap2{
+    border-left: 10px solid #f54828;
+    padding-left: 4vw;
+    padding-right: 10vw;
+} 
+
+.box_ap1{
+    border-right: 10px solid #f54828;
+    padding-left: 10vw;
+    padding-right: 4vw;
 }
 
 #box_ap a {
@@ -85,42 +94,16 @@ nav{
     width: 100px;
 }
 
-#leitura {
-    background-color: #B46746;
-    width: 100%;
-    height: 95vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
-#leitura_img {
-    height: 70vh;
-    border-radius: 20px;
-}
 
-#box_leitura {
-    width: 40vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-}
+/*Responsavidade*/
 
-#box_leitura a {
-    color: #f3f5f3;
-    background-color: #137474;
-    border-radius: 20px;
-    font-family: Ubuntu;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 20px;
-    align-items: center;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+@media (max-width:950px){
+    .box{
+        flex-direction: column;
+    }
 
-    height: 20px;
-    width: 100px;
+    .box-reverse{
+        flex-direction: column-reverse;
+    }
 }

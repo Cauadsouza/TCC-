@@ -1,22 +1,212 @@
 [
     {
         "id": 1,
-        "Nome": "Maçã",
-        "Calorias": 435,
-        "Gordura": 0.2,
-        "Sodio": 58,
-        "Carboidratos": 8.2,
-        "Proteina": 0.8,
-        "Fibra": 0
+        "Nome": "Abacate",
+        "Calorias": 96,
+        "Gordura": 8.4,
+        "Sodio": 0,
+        "Carboidratos": 6,
+        "Proteina": 1.2,
+        "Fibra": 6.3
     },
     {
         "id": 2,
+        "Nome": "Abacaxi",
+        "Calorias": 48,
+        "Gordura": 0.1,
+        "Sodio": 0,
+        "Carboidratos": 12,
+        "Proteina": 0.9,
+        "Fibra": 1
+    },
+    {
+        "id": 3,
+        "Nome": "Açaí",
+        "Calorias": 262,
+        "Gordura": 2,
+        "Sodio": 0,
+        "Carboidratos": 57,
+        "Proteina": 3.6,
+        "Fibra": 5.9
+    },
+    {
+        "id": 4,
         "Nome": "Acerola",
         "Calorias": 33,
         "Gordura": 0.2,
-        "Sodio": 58,
-        "Carboidratos": 8.2,
-        "Proteina": 80,
-        "Fibra": 0
+        "Sodio": 0,
+        "Carboidratos": 8,
+        "Proteina": 0.9,
+        "Fibra": 1.5
+    },
+    {
+        "id": 5,
+        "Nome": "Banana",
+        "Calorias": 89,
+        "Gordura": 0.2,
+        "Sodio": 1,
+        "Carboidratos": 23,
+        "Proteina": 1.1,
+        "Fibra": 2.6
+    },
+    {
+        "id": 6,
+        "Nome": "Cajá",
+        "Calorias": 46,
+        "Gordura": 0,
+        "Sodio": 1.4,
+        "Carboidratos": 11,
+        "Proteina": 1.3,
+        "Fibra": 2.6
+    },
+    {
+        "id": 7,
+        "Nome": "Cereja",
+        "Calorias": 63,
+        "Gordura": 0.1,
+        "Sodio": 0,
+        "Carboidratos": 16,
+        "Proteina": 1.1,
+        "Fibra": 2.1
+    },
+    {
+        "id": 8,
+        "Nome": "Coco",
+        "Calorias": 354,
+        "Gordura": 32,
+        "Sodio": 20,
+        "Carboidratos": 15,
+        "Proteina": 3.3,
+        "Fibra": 9
+    },
+    {
+        "id": 9,
+        "Nome": "Goiaba",
+        "Calorias": 52,
+        "Gordura": 0.5,
+        "Sodio": 0,
+        "Carboidratos": 12,
+        "Proteina": 0.9,
+        "Fibra": 6.3
+    },
+    {
+        "id": 10,
+        "Nome": "Kiwi",
+        "Calorias": 51,
+        "Gordura": 0.6,
+        "Sodio": 0,
+        "Carboidratos": 11,
+        "Proteina": 1.3,
+        "Fibra": 2.7
+    },
+    {
+        "id": 11,
+        "Nome": "Laranja",
+        "Calorias": 45,
+        "Gordura": 0.1,
+        "Sodio": 0,
+        "Carboidratos": 11,
+        "Proteina": 1,
+        "Fibra": 1.1
+    },
+    {
+        "id": 12,
+        "Nome": "Limão",
+        "Calorias": 32,
+        "Gordura": 0.1,
+        "Sodio": 1.2,
+        "Carboidratos": 11,
+        "Proteina": 0.9,
+        "Fibra": 1.2
+    },
+    {
+        "id": 13,
+        "Nome": "Maçã",
+        "Calorias": 63,
+        "Gordura": 0.3,
+        "Sodio": 1.3,
+        "Carboidratos": 17,
+        "Proteina": 0.2,
+        "Fibra": 2
+    },
+    {
+        "id": 14,
+        "Nome": "Mamão",
+        "Calorias": 45,
+        "Gordura": 0.1,
+        "Sodio": 3.3,
+        "Carboidratos": 12,
+        "Proteina": 0.8,
+        "Fibra": 1.8
+    },
+    {
+        "id": 15,
+        "Nome": "Manga",
+        "Calorias": 64,
+        "Gordura": 0.3,
+        "Sodio": 0.6,
+        "Carboidratos": 17,
+        "Proteina": 0.4,
+        "Fibra": 1.6
+    },
+    {
+        "id": 16,
+        "Nome": "Maracujá",
+        "Calorias": 68,
+        "Gordura": 2.1,
+        "Sodio": 1.6,
+        "Carboidratos": 12,
+        "Proteina": 2,
+        "Fibra": 1.1
+    },
+    {
+        "id": 17,
+        "Nome": "Melancia",
+        "Calorias": 33,
+        "Gordura": 0,
+        "Sodio": 0,
+        "Carboidratos": 8.1,
+        "Proteina": 0.9,
+        "Fibra": 0.1
+    },
+    {
+        "id": 18,
+        "Nome": "Melão",
+        "Calorias": 29,
+        "Gordura": 0,
+        "Sodio": 11,
+        "Carboidratos": 7.5,
+        "Proteina": 0.7,
+        "Fibra": 0.3
+    },
+    {
+        "id": 19,
+        "Nome": "Morango",
+        "Calorias": 30,
+        "Gordura": 0.3,
+        "Sodio": 0,
+        "Carboidratos": 6.8,
+        "Proteina": 0.9,
+        "Fibra": 1.7
+    },
+    {
+        "id": 20,
+        "Nome": "Tangerina",
+        "Calorias": 38,
+        "Gordura": 0.1,
+        "Sodio": 0,
+        "Carboidratos": 10,
+        "Proteina": 0.9,
+        "Fibra": 0.9
+    },
+    {
+        "id": 21,
+        "Nome": "Uva",
+        "Calorias": 53,
+        "Gordura": 0.2,
+        "Sodio": 0,
+        "Carboidratos": 14,
+        "Proteina": 0.8,
+        "Fibra": 0.9
     }
 ]

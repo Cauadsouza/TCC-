@@ -47,13 +47,13 @@ export class ContagemCaloricaComponent implements OnInit {
     let bol = new GastoCalorico(infos.peso, infos.genero, infos.idade, infos.fator, infos.altura)
     this.resultadoIMC = bol.calcularPI();
     if(this.resultadoIMC == 2){
-      this.resultadoPI = `Atualmente seu índice de massa corporal está adequado, é recomendado continuar com o atual consumo de calorias diarias`
+      this.resultadoPI = `Atualmente seu índice de massa corporal está adequado, é recomendado continuar com o atual consumo de calorias diarias.`
     }
     else if(this.resultadoIMC == 3){
-      this.resultadoPI = `Atualmente seu índice de massa corporal está acima do adequado, é recomendado diminuir o consumo e aumentar os de calorias diarias`
+      this.resultadoPI = `Atualmente seu índice de massa corporal está acima do adequado, é recomendado diminuir o consumo e aumentar o gasto de calorias diarias.`
     }
     else if(this.resultadoIMC == 1){
-      this.resultadoPI = `Atualmente seu índice de massa corporal está abaixo do adequado, é recomendado aumentar o consumo e diminuir os de calorias diarias`
+      this.resultadoPI = `Atualmente seu índice de massa corporal está abaixo do adequado, é recomendado aumentar o consumo e diminuir o gasto de calorias diarias.`
     }
     else{
       this.resultadoPI = ''

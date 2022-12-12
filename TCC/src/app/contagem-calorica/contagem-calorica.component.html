@@ -13,7 +13,7 @@
                 <label for="altura"><h3>Qual a sua altura?</h3></label>
                 <div class="forms-metricas">
                 <input type="number" class="form-control" name="altura" id="altura" formControlName="altura">
-                <label for="peso">m</label>
+                <label for="peso">cm</label>
                 </div>
             </div>
             <div class="forms-numbers">
@@ -28,13 +28,19 @@
         <div class="form-group">
           <label><h3>Qual o seu Sexo?</h3></label>
         <div class="form-grupo">
+          <div class="forms-img">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="genero" id="masculino" [value]="1" formControlName="genero">
             <label class="form-check-label" for="masculino">Masculino</label>
           </div>
+          <img id="ap_img" src="assets/modelo_generico.jfif" height="100px" width="100px">
+          </div>
+          <div class="forms-img">
           <div class="form-check">
             <input class="form-check-input" type="radio" name="genero" id="feminino" [value]="2" formControlName="genero">
             <label class="form-check-label" for="feminino">Feminino</label>
+          </div>
+          <img id="ap_img" src="assets/modelo_generico.jfif" height="100px" width="100px">
           </div>
         </div>
         </div>
@@ -42,17 +48,26 @@
         <div class="form-group">
             <label><h3>Fator de Atividade Fisica</h3></label>
             <div class="form-grupo">
+            <div class="forms-text">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="fator" id="leve" [value]="1" formControlName="fator">
               <label class="form-check-label" for="leve">Leve</label>
             </div>
+            <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, tortor eu tincidunt interdum.</div>
+            </div>
+            <div class="forms-text">
             <div class="form-check">
               <input class="form-check-input" type="radio" name="fator" id="moderado" [value]="2" formControlName="fator">
               <label class="form-check-label" for="moderado">Moderado</label>
             </div>
+            <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, tortor eu tincidunt interdum.</div>
+            </div>
+            <div class="forms-text">
             <div class="form-check">
                 <input class="form-check-input" type="radio" name="fator" id="intenso" [value]="3" formControlName="fator">
                 <label class="form-check-label" for="moderado">Intenso</label>
+            </div>
+            <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pulvinar, tortor eu tincidunt interdum.</div>
             </div>
           </div>
         </div>
@@ -65,31 +80,37 @@
         <input type="button" class="btn bt" value="Peso Ideal" [disabled]="GCform.invalid" (click)="CalcularPI()">
       </div>
       <div >
-        <input type="button" class="btn" value="Calcule calorias diárias necessárias"[disabled]="GCform.invalid" (click)="CalcularID()">
+        <input type="button" class="btn" value="Calcular calorias diárias necessárias"[disabled]="GCform.invalid" (click)="CalcularID()">
       </div>
     </section>
     </form>
     <div id="displayC" [ngStyle]="{'display': displayC}">
-      <p>{{resultado}}</p>
+      <h3>Seu Resultado</h3>
+      <div id="dC">
+        <p>{{resultado}} kcal</p>
+      </div>
     </div>
     <div id="displayP" [ngStyle]="{'display': displayPI}">
       <p id="resultadoPI">{{resultadoPI}}</p>
     </div>
     <div id="displayN" [ngStyle]="{'display': displayN}">
       <div class="CCDN-box">
-        <h2>PARA PERDER PESO</h2>
+        <p><b>PARA PERDER PESO</b></p>
+        <img class="logo" src="/assets/GD.png" height="150px" width="150px">
         <p>Calorias ingeridas diariamente</p>
-        <p>{{resultado - 500}} até {{resultado - 1000}} kcal</p>
+        <h3>{{resultado - 500}} até {{resultado - 1000}} kcal</h3>
       </div>
       <div class="CCDN-box">
-        <h2>PARA MANTER O PESO</h2>
+        <p><b>PARA MANTER O PESO</b></p>
+        <img class="logo" src="/assets/GL.png" height="150px" width="150px">
         <p>Calorias ingeridas diariamente</p>
-        <p>{{resultado - 0}} até {{resultado - 200}} kcal</p>
+        <h3>{{resultado - 0}} até {{resultado - 200}} kcal</h3>
       </div>
       <div class="CCDN-box">
-        <h2>PARA GANHAR PESO</h2>
+        <p><b>PARA GANHAR PESO</b></p>
+        <img class="logo" src="/assets/GA.png" height="150px" width="150px">
         <p>Calorias ingeridas diariamente</p>
-        <p>{{resultado + 500}} até {{resultado + 1000}} kcal</p>
+        <h3>{{resultado + 500}} até {{resultado + 1000}} kcal</h3>
       </div>
     </div>
 </section>
