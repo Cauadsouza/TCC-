@@ -228,23 +228,6 @@ export class GastoCalorico {
         }
     }
 
-/* `Atualmente seu índice de massa corporal está adequado, é recomendado continuar com o atual consumo de calorias diarias`
-   `Atualmente seu índice de massa corporal está acima do adequado, é recomendado diminuir o consumo e aumentar os de calorias diarias`
-   `Atualmente seu índice de massa corporal está acima do adequado, é recomendado aumentar o consumo e diminuir os de calorias diarias`
-
-
-       PARA PERDER PESO 
-Calorias ingeridas diarialmente
-   {{resultado - 500}} até {{resultado - 1000}} kcal
-
-       PARA MANTER O PESO 
-Calorias ingeridas diarialmente
-   {{resultado - 0}} até {{resultado - 200}} kcal
-
-       PARA GANHAR PESO     
-Calorias ingeridas diarialmente
-   {{resultado + 500}} até {{resultado + 1000}} kcal
-*/
 }
 
 

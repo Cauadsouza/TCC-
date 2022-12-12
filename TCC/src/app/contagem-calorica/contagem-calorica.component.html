@@ -87,7 +87,7 @@
     <div id="displayC" [ngStyle]="{'display': displayC}">
       <h3>Seu Resultado</h3>
       <div id="dC">
-        <p>{{resultado}} kcal</p>
+        <p>{{resultado.toFixed(0)}} kcal</p>
       </div>
     </div>
     <div id="displayP" [ngStyle]="{'display': displayPI}">
@@ -98,7 +98,7 @@
         <p><b>PARA PERDER PESO</b></p>
         <img class="logo" src="/assets/GD.png" height="150px" width="150px">
         <p>Calorias ingeridas diariamente</p>
-        <h3>{{resultado - 500}} até {{resultado - 1000}} kcal</h3>
+        <h3>{{resultado}}-500 até {{resultado - 1000}} kcal</h3>
       </div>
       <div class="CCDN-box">
         <p><b>PARA MANTER O PESO</b></p>
